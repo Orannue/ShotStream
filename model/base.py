@@ -30,24 +30,25 @@ class BaseModel(nn.Module):
         self.model_name = getattr(args, "model_name", "Wan2.1-T2V-1.3B")
         self.real_model_name = getattr(args, "real_name", "Wan2.1-T2V-1.3B")
         self.fake_model_name = getattr(args, "fake_name", "Wan2.1-T2V-1.3B")
+        self.model_root = getattr(args, "model_root", None)
         self.local_attn_size = getattr(args, "model_kwargs", {}).get("local_attn_size", -1)
         self.sink_size = getattr(args, "model_kwargs", {}).get("sink_size", 0)
         # self.generator = WanDiffusionWrapper(**getattr(args, "model_kwargs", {}), is_causal=True, timestep_shift=args.timestep_shift)
-        self.generator = WanDiffusionWrapper(model_name=self.model_name, is_causal=True, timestep_shift=args.timestep_shift, local_attn_size=self.local_attn_size, sink_size=self.sink_size)
+        self.generator = WanDiffusionWrapper(model_name=self.model_name, model_root=self.model_root, is_causal=True, timestep_shift=args.timestep_shift, local_attn_size=self.local_attn_size, sink_size=self.sink_size)
         self.generator.model.requires_grad_(True)
         self.generator.enable_gradient_checkpointing()
 
-        self.real_score = WanDiffusionWrapper(model_name=self.real_model_name, is_causal=False)
+        self.real_score = WanDiffusionWrapper(model_name=self.real_model_name, model_root=self.model_root, is_causal=False)
         self.real_score.model.requires_grad_(False)
 
-        self.fake_score = WanDiffusionWrapper(model_name=self.fake_model_name, is_causal=False)
+        self.fake_score = WanDiffusionWrapper(model_name=self.fake_model_name, model_root=self.model_root, is_causal=False)
         self.fake_score.model.requires_grad_(True)
         self.fake_score.enable_gradient_checkpointing()
 
-        self.text_encoder = WanTextEncoder()
+        self.text_encoder = WanTextEncoder(model_root=self.model_root or f"wan_models/{self.model_name}")
         self.text_encoder.requires_grad_(False)
 
-        self.vae = WanVAEWrapper()
+        self.vae = WanVAEWrapper(model_root=self.model_root or f"wan_models/{self.model_name}")
         self.vae.requires_grad_(False)
 
         self.scheduler = self.generator.get_scheduler()
@@ -412,15 +413,16 @@ class FrameConcatModel(nn.Module):
     def __init__(self, args, device):
         super().__init__()
         self.model_name = getattr(args, "model_name", "Wan2.1-T2V-1.3B")
+        self.model_root = getattr(args, "model_root", None)
         self.is_causal = getattr(args, "use_causal", False)
         print(f"Begin to set timestep shift is {args.timestep_shift}, is causal is {self.is_causal}")
-        self.generator = WanDiffusionWrapper(model_name=self.model_name, is_causal=self.is_causal, timestep_shift=args.timestep_shift)
+        self.generator = WanDiffusionWrapper(model_name=self.model_name, model_root=self.model_root, is_causal=self.is_causal, timestep_shift=args.timestep_shift)
         self.generator.model.requires_grad_(True)
 
-        self.text_encoder = WanTextEncoder()
+        self.text_encoder = WanTextEncoder(model_root=self.model_root or f"wan_models/{self.model_name}")
         self.text_encoder.requires_grad_(False)
 
-        self.vae = WanVAEWrapper()
+        self.vae = WanVAEWrapper(model_root=self.model_root or f"wan_models/{self.model_name}")
         self.vae.requires_grad_(False)
 
         self.scheduler = self.generator.get_scheduler()
@@ -459,17 +461,18 @@ class FrameConcatCausalModel(nn.Module):
     def __init__(self, args, device):
         super().__init__()
         self.model_name = getattr(args, "model_name", "Wan2.1-T2V-1.3B")
+        self.model_root = getattr(args, "model_root", None)
         self.local_attn_size = getattr(args, "model_kwargs", {}).get("local_attn_size", -1)
         self.sink_size = getattr(args, "model_kwargs", {}).get("sink_size", 0)
         print(f"Begin to set timestep shift is {args.timestep_shift}")
-        self.generator = WanDiffusionWrapper(model_name=self.model_name, is_causal=True, timestep_shift=args.timestep_shift, local_attn_size=self.local_attn_size, sink_size=self.sink_size).to(device)
+        self.generator = WanDiffusionWrapper(model_name=self.model_name, model_root=self.model_root, is_causal=True, timestep_shift=args.timestep_shift, local_attn_size=self.local_attn_size, sink_size=self.sink_size).to(device)
 
         self.generator.model.requires_grad_(True)
 
-        self.text_encoder = WanTextEncoder().to(device)
+        self.text_encoder = WanTextEncoder(model_root=self.model_root or f"wan_models/{self.model_name}").to(device)
         self.text_encoder.requires_grad_(False)
 
-        self.vae = WanVAEWrapper().to(device)
+        self.vae = WanVAEWrapper(model_root=self.model_root or f"wan_models/{self.model_name}").to(device)
         self.vae.requires_grad_(False)
 
         self.scheduler = self.generator.get_scheduler()
