@@ -5,10 +5,24 @@ JSON_DIR=${JSON_DIR:-demo/testdata/eval_caption_multishot_t2v_100_json}
 CSV_PATH=${CSV_PATH:-demo/testdata/eval_caption_multishot_t2v_100.csv}
 OUTPUT_DIR=${OUTPUT_DIR:-demo/infer/eval_caption_multishot_t2v_100}
 FRAMES_PER_SHOT=${FRAMES_PER_SHOT:-81}
-CONFIG_PATH=${CONFIG_PATH:-ckpts/shotstream.yaml}
-DEFAULT_CONFIG_PATH=${DEFAULT_CONFIG_PATH:-ckpts/default_config.yaml}
-RESUME_CKPT=${RESUME_CKPT:-ckpts/shotstream_merged.pt}
-MODEL_ROOT=${MODEL_ROOT:-..models/Wan2.1-T2V-1.3B}
+CONFIG_PATH=${CONFIG_PATH:-shotstream.yaml}
+DEFAULT_CONFIG_PATH=${DEFAULT_CONFIG_PATH:-default_config.yaml}
+
+# Local Hugging Face repo paths. These match tools/setup/download_ckpt.sh:
+#   git clone https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B wan_models
+#   git clone https://huggingface.co/KlingTeam/ShotStream ckpts
+HUGGINGFACE_WAN_MODEL_ROOT=${HUGGINGFACE_WAN_MODEL_ROOT:-wan_models}
+HUGGINGFACE_SHOTSTREAM_CKPT_ROOT=${HUGGINGFACE_SHOTSTREAM_CKPT_ROOT:-ckpts}
+
+RESUME_CKPT=${RESUME_CKPT:-${HUGGINGFACE_SHOTSTREAM_CKPT_ROOT}/shotstream_merged.pt}
+MODEL_ROOT=${MODEL_ROOT:-${HUGGINGFACE_WAN_MODEL_ROOT}}
+
+# Optional Hugging Face Hub upload target. Leave HF_UPLOAD_REPO_ID empty to skip upload.
+# Authentication is read by huggingface-cli from HF_TOKEN or an existing login.
+HF_UPLOAD_REPO_ID=${HF_UPLOAD_REPO_ID:-Orannue/Baseline_results}
+HF_UPLOAD_REPO_TYPE=${HF_UPLOAD_REPO_TYPE:-dataset}
+HF_UPLOAD_LOCAL_PATH=${HF_UPLOAD_LOCAL_PATH:-${OUTPUT_DIR}}
+HF_UPLOAD_PATH=${HF_UPLOAD_PATH:-eval_caption_multishot_t2v_100/shotstream}
 
 # python tools/inference/build_multishot_json_csv.py \
 #     --json_dir "${JSON_DIR}" \
@@ -25,3 +39,16 @@ python Inference_Causal_BatchJson.py \
     --multi_caption True \
     --frames_per_shot "${FRAMES_PER_SHOT}" \
     --data_path "${CSV_PATH}"
+
+if [[ -n "${HF_UPLOAD_REPO_ID}" ]]; then
+    if ! command -v huggingface-cli >/dev/null 2>&1; then
+        echo "huggingface-cli was not found. Install huggingface_hub or login before uploading." >&2
+        exit 1
+    fi
+
+    huggingface-cli upload \
+        "${HF_UPLOAD_REPO_ID}" \
+        "${HF_UPLOAD_LOCAL_PATH}" \
+        "${HF_UPLOAD_PATH}" \
+        --repo-type "${HF_UPLOAD_REPO_TYPE}"
+fi
