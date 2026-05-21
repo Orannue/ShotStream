@@ -9,8 +9,7 @@ import torch
 import torch.distributed as dist
 from einops import rearrange
 from omegaconf import OmegaConf
-from torch.utils.data import DataLoader, SequentialSampler
-from torch.utils.data.distributed import DistributedSampler
+from torch.utils.data import DataLoader, SequentialSampler, Subset
 from torchvision.io import write_video
 from tqdm import tqdm
 
@@ -134,10 +133,19 @@ def main():
     print(f"Number of prompts: {num_prompts}")
 
     if dist.is_initialized():
-        sampler = DistributedSampler(dataset, shuffle=False, drop_last=True)
+        rank_indices = list(range(rank, len(dataset), world_size))
+        dataset_for_loader = Subset(dataset, rank_indices)
+        sampler = SequentialSampler(dataset_for_loader)
+        logging.info(
+            "Rank %d/%d processing %d samples",
+            rank,
+            world_size,
+            len(rank_indices),
+        )
     else:
-        sampler = SequentialSampler(dataset)
-    dataloader = DataLoader(dataset, batch_size=1, sampler=sampler, num_workers=0, drop_last=False)
+        dataset_for_loader = dataset
+        sampler = SequentialSampler(dataset_for_loader)
+    dataloader = DataLoader(dataset_for_loader, batch_size=1, sampler=sampler, num_workers=0, drop_last=False)
 
     if local_rank == 0:
         os.makedirs(args.output_folder, exist_ok=True)
@@ -157,9 +165,6 @@ def main():
         video = 255.0 * video
 
         pipeline.vae.model.clear_cache()
-
-        if local_rank != 0:
-            continue
 
         json_path = dataset.caption_json_path[row_idx]
         json_idx = read_json_idx(json_path, row_idx)
@@ -186,6 +191,9 @@ def main():
                 video[0, start_frame:end_frame],
                 fps=16,
             )
+
+    if dist.is_initialized():
+        dist.barrier()
 
 
 if __name__ == "__main__":
