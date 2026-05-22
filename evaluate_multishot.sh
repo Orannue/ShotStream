@@ -6,7 +6,15 @@ RESULT_ROOT="demo/infer/eval_caption_multishot_t2v_100"
 MANIFEST="../FAR-Dev2/assets/data/meta/vbench/Vbench_multishot_manifest.json"
 OUTPUT_DIR="demo/infer/eval_caption_multishot_t2v_100"
 DEVICE="cuda"
-MODEL_CACHE_DIR="${VBENCH_CACHE_DIR:-../FAR-Dev2/experiments/pretrained_models/vbench}"
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+
+MODEL_CACHE_DIR="${VBENCH_CACHE_DIR:-$SCRIPT_DIR/../FAR-Dev2/experiments/pretrained_models/vbench}"
+export VBENCH_CACHE_DIR="$(cd "$MODEL_CACHE_DIR" && pwd)"
+
+echo "VBENCH_CACHE_DIR=$VBENCH_CACHE_DIR"
+ls "$VBENCH_CACHE_DIR"
 
 python evaluate_multishot.py \
   --result-root "$RESULT_ROOT" \
