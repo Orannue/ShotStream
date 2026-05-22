@@ -3,7 +3,9 @@ import json
 import logging
 import os
 import re
+import shutil
 import sys
+import tempfile
 
 import torch
 import torch.distributed as dist
@@ -54,6 +56,26 @@ def frame_ranges_from_count(total_frames, shot_count, frames_per_shot):
         ]
         for shot_idx in range(shot_count)
     ]
+
+
+def expected_video_files(video_dir, shot_count):
+    return [os.path.join(video_dir, "full.mp4")] + [
+        os.path.join(video_dir, f"shot{shot_idx}.mp4")
+        for shot_idx in range(1, shot_count + 1)
+    ]
+
+
+def output_complete(video_dir, shot_count):
+    return all(
+        os.path.isfile(path) and os.path.getsize(path) > 0
+        for path in expected_video_files(video_dir, shot_count)
+    )
+
+
+def replace_output_dir(tmp_video_dir, video_dir):
+    if os.path.isdir(video_dir):
+        shutil.rmtree(video_dir)
+    os.replace(tmp_video_dir, video_dir)
 
 
 def main():
@@ -157,6 +179,15 @@ def main():
         row_idx = batch_data["idx"].item()
         batch = batch_data if isinstance(batch_data, dict) else batch_data[0]
 
+        json_path = dataset.caption_json_path[row_idx]
+        json_idx = read_json_idx(json_path, row_idx)
+        shot_count = len(batch["shots_captions"][0])
+        video_dir = os.path.join(args.output_folder, f"video{json_idx}")
+
+        if output_complete(video_dir, shot_count):
+            logging.info("Skip video%s: existing output is complete", json_idx)
+            continue
+
         video = pipeline.inference(
             batch=batch,
             use_wo_rope_cache=config.use_wo_rope_cache,
@@ -166,31 +197,54 @@ def main():
 
         pipeline.vae.model.clear_cache()
 
-        json_path = dataset.caption_json_path[row_idx]
-        json_idx = read_json_idx(json_path, row_idx)
-        shot_count = len(batch["shots_captions"][0])
         frame_ranges = frame_ranges_from_count(video.shape[1], shot_count, args.frames_per_shot)
 
-        video_dir = os.path.join(args.output_folder, f"video{json_idx}")
-        os.makedirs(video_dir, exist_ok=True)
-
-        write_video(os.path.join(video_dir, "full.mp4"), video[0], fps=16)
-        for shot_idx, (start_frame, end_frame) in enumerate(frame_ranges, start=1):
-            if start_frame >= end_frame:
-                logging.warning(
-                    "Skip empty shot%d for video%s: range [%d, %d) exceeds full video length %d",
-                    shot_idx,
-                    json_idx,
-                    start_frame,
-                    end_frame,
-                    video.shape[1],
+        tmp_video_dir = tempfile.mkdtemp(
+            dir=args.output_folder,
+            prefix=f".video{json_idx}.rank{rank}.tmp-",
+        )
+        try:
+            write_video(os.path.join(tmp_video_dir, "full.mp4"), video[0], fps=16)
+            for shot_idx, (start_frame, end_frame) in enumerate(frame_ranges, start=1):
+                if start_frame >= end_frame:
+                    logging.warning(
+                        "Skip empty shot%d for video%s: range [%d, %d) exceeds full video length %d",
+                        shot_idx,
+                        json_idx,
+                        start_frame,
+                        end_frame,
+                        video.shape[1],
+                    )
+                    continue
+                write_video(
+                    os.path.join(tmp_video_dir, f"shot{shot_idx}.mp4"),
+                    video[0, start_frame:end_frame],
+                    fps=16,
                 )
-                continue
-            write_video(
-                os.path.join(video_dir, f"shot{shot_idx}.mp4"),
-                video[0, start_frame:end_frame],
-                fps=16,
-            )
+
+            if not output_complete(tmp_video_dir, shot_count):
+                raise RuntimeError(f"Incomplete output for video{json_idx} in {tmp_video_dir}")
+
+            with open(os.path.join(tmp_video_dir, ".done"), "w", encoding="utf-8") as done_file:
+                json.dump(
+                    {
+                        "row_idx": row_idx,
+                        "json_idx": json_idx,
+                        "shot_count": shot_count,
+                        "frames": int(video.shape[1]),
+                    },
+                    done_file,
+                    ensure_ascii=False,
+                    indent=2,
+                )
+                done_file.write("\n")
+
+            replace_output_dir(tmp_video_dir, video_dir)
+            tmp_video_dir = None
+            logging.info("Wrote complete output for video%s", json_idx)
+        finally:
+            if tmp_video_dir is not None and os.path.isdir(tmp_video_dir):
+                shutil.rmtree(tmp_video_dir)
 
     if dist.is_initialized():
         dist.barrier()

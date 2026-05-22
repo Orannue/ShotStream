@@ -1,5 +1,4 @@
-﻿#!/usr/bin/env bash
-set -euo pipefail
+﻿set -euo pipefail
 
 # Change these paths to your real generated videos root, manifest, and model cache.
 RESULT_ROOT="demo/infer/eval_caption_multishot_t2v_100"

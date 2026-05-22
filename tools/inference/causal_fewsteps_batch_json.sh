@@ -65,10 +65,3 @@ if [[ -n "${HF_UPLOAD_REPO_ID}" ]]; then
         "${HF_UPLOAD_PATH}" \
         --repo-type "${HF_UPLOAD_REPO_TYPE}"
 fi
-
-    hf upload \
-        "Orannue/Baseline_results" \
-        "demo/infer/eval_caption_multishot_t2v_100" \
-        "eval_caption_multishot_t2v_100/shotstream" \
-        --repo-type "dataset" \
-        --token "$HF_TOKEN"
