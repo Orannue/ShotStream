@@ -1,17 +1,19 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 set -euo pipefail
 
-# Change these two paths to your real generated videos root and manifest.
+# Change these paths to your real generated videos root, manifest, and model cache.
 RESULT_ROOT="demo/infer/eval_caption_multishot_t2v_100"
 MANIFEST="../FAR-Dev2/assets/data/meta/vbench/Vbench_multishot_manifest.json"
 OUTPUT_DIR="demo/infer/eval_caption_multishot_t2v_100"
 DEVICE="cuda"
+MODEL_CACHE_DIR="${VBENCH_CACHE_DIR:-../FAR-Dev2/experiments/pretrained_models/vbench}"
 
 python evaluate_multishot.py \
   --result-root "$RESULT_ROOT" \
   --manifest "$MANIFEST" \
   --output-dir "$OUTPUT_DIR" \
   --device "$DEVICE" \
+  --cache-dir "$MODEL_CACHE_DIR" \
   --metrics overall_quality shot_structure intra_shot_quality inter_shot_quality \
   --text-alignment-metric overall_consistency \
   --overall-quality-dimensions aesthetic_quality dynamic_degree \
