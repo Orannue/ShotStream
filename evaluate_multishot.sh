@@ -7,7 +7,7 @@ MANIFEST="../FAR-Dev2/assets/data/meta/vbench/Vbench_multishot_manifest.json"
 OUTPUT_DIR="demo/infer/eval_caption_multishot_t2v_100"
 DEVICE="cuda"
 
-python scripts/evaluate_multishot.py \
+python evaluate_multishot.py \
   --result-root "$RESULT_ROOT" \
   --manifest "$MANIFEST" \
   --output-dir "$OUTPUT_DIR" \
