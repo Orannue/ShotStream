@@ -32,7 +32,7 @@ HF_UPLOAD_PATH=${HF_UPLOAD_PATH:-eval_caption_multishot_t2v_100/shotstream}
 
 
 if [[ "${NUM_GPUS}" -gt 1 ]]; then
-    torchrun --nproc_per_node="${NUM_GPUS}" Inference_Causal_BatchJson.py \
+    CUDA_VISIBLE_DEVICES=4,5,6,7 torchrun --nproc_per_node="${NUM_GPUS}" Inference_Causal_BatchJson.py \
         --config_path "${CONFIG_PATH}" \
         --default_config_path "${DEFAULT_CONFIG_PATH}" \
         --output_folder "${OUTPUT_DIR}" \
