@@ -13,7 +13,6 @@ python evaluate_multishot.py \
   --manifest "$MANIFEST" \
   --output-dir "$OUTPUT_DIR" \
   --device "$DEVICE" \
-  --cache-dir "$MODEL_CACHE_DIR" \
   --metrics overall_quality shot_structure intra_shot_quality inter_shot_quality \
   --text-alignment-metric overall_consistency \
   --overall-quality-dimensions aesthetic_quality dynamic_degree \
@@ -23,4 +22,6 @@ python evaluate_multishot.py \
   --sca-min-gap-sec 0.35 \
   --character-frame-strategy middle \
   --continue-on-error \
-  --load-ckpt-from-local
+  --cache-dir "$VBENCH_CACHE_DIR" \
+  --load-ckpt-from-local \
+  --transnetv2-weights "$VBENCH_CACHE_DIR/transnetv2/transnetv2-pytorch-weights.pth"
