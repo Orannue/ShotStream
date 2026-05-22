@@ -22,4 +22,5 @@ python evaluate_multishot.py \
   --sca-threshold 0.5 \
   --sca-min-gap-sec 0.35 \
   --character-frame-strategy middle \
-  --continue-on-error
+  --continue-on-error \
+  --load-ckpt-from-local
