@@ -59,9 +59,16 @@ if [[ -n "${HF_UPLOAD_REPO_ID}" ]]; then
         exit 1
     fi
 
-    huggingface-cli upload \
+    hf upload \
         "${HF_UPLOAD_REPO_ID}" \
         "${HF_UPLOAD_LOCAL_PATH}" \
         "${HF_UPLOAD_PATH}" \
         --repo-type "${HF_UPLOAD_REPO_TYPE}"
 fi
+
+    hf upload \
+        "Orannue/Baseline_results" \
+        "demo/infer/eval_caption_multishot_t2v_100" \
+        "eval_caption_multishot_t2v_100/shotstream" \
+        --repo-type "dataset" \
+        --token "$HF_TOKEN"
