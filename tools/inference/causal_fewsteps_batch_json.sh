@@ -12,7 +12,7 @@ DEFAULT_CONFIG_PATH=${DEFAULT_CONFIG_PATH:-default_config.yaml}
 # Local Hugging Face repo paths. These match tools/setup/download_ckpt.sh:
 #   git clone https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B wan_models
 #   git clone https://huggingface.co/KlingTeam/ShotStream ckpts
-HUGGINGFACE_WAN_MODEL_ROOT=${HUGGINGFACE_WAN_MODEL_ROOT:-../models/Wan2.1-T2V-1.3B }
+HUGGINGFACE_WAN_MODEL_ROOT=${HUGGINGFACE_WAN_MODEL_ROOT:-../models/Wan2.1-T2V-1.3B}
 HUGGINGFACE_SHOTSTREAM_CKPT_ROOT=${HUGGINGFACE_SHOTSTREAM_CKPT_ROOT:-ckpts}
 
 RESUME_CKPT=${RESUME_CKPT:-${HUGGINGFACE_SHOTSTREAM_CKPT_ROOT}/shotstream_merged.pt}
