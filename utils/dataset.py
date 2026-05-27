@@ -125,6 +125,11 @@ def cycle(dl):
 
 import ast
 import decord
+from utils.shot_frames import (
+    frame_counts_from_ranges,
+    frame_ranges_from_counts,
+    nearest_4n_plus_1,
+)
 
 class MultiShots_FrameConcat_Dataset(Dataset):
     def __init__(self, csv_path):
@@ -142,13 +147,43 @@ class MultiShots_FrameConcat_Dataset(Dataset):
     def __getitem__(self, idx):
         while True:
             try:
+                global_captions, shots_captions = [], []  # read caption
+                caption_json_path = self.caption_json_path[idx]
+                with open(caption_json_path, 'r', encoding="utf-8") as f:
+                    caption_content = json.load(f)
+
+                shot_keys = []
+                key_index = 1
+                while f"shot{key_index}" in caption_content:
+                    shot_keys.append(f"shot{key_index}")
+                    key_index += 1
+                if not shot_keys:
+                    raise ValueError(f"No shot captions found in {caption_json_path}")
+
                 if self.frame_number is not None:
-                    frame_number = ast.literal_eval(self.frame_number[idx]) # shot information
-                    max_frame_number = frame_number[-1][-1]
-                    shot_flag = []
-                    for shot_index in range(len(frame_number)):
-                        shot_flag += [shot_index] * (frame_number[shot_index][1] - frame_number[shot_index][0])
-                    shot_flag = shot_flag + shot_flag[:-1]
+                    raw_frame_number = ast.literal_eval(self.frame_number[idx]) # shot information
+                    raw_shot_frame_counts = frame_counts_from_ranges(raw_frame_number)
+                else:
+                    raw_shot_frame_counts = caption_content.get("frames_per_shot")
+                    if raw_shot_frame_counts is None:
+                        raw_shot_frame_counts = [81] * len(shot_keys)
+
+                shot_frame_counts = [
+                    nearest_4n_plus_1(frame_count)
+                    for frame_count in raw_shot_frame_counts
+                ]
+                if len(shot_frame_counts) != len(shot_keys):
+                    raise ValueError(
+                        f"frames_per_shot length mismatch in {caption_json_path}: "
+                        f"{len(shot_frame_counts)} vs {len(shot_keys)} shots"
+                    )
+                frame_number = frame_ranges_from_counts(shot_frame_counts)
+                max_frame_number = frame_number[-1][-1]
+
+                shot_flag = []
+                for shot_index, frame_count in enumerate(shot_frame_counts):
+                    shot_flag += [shot_index] * frame_count
+                shot_flag = shot_flag + shot_flag[:-1]
 
                 if self.video_path is not None:
                     video_path = self.video_path[idx]  # read video
@@ -156,23 +191,21 @@ class MultiShots_FrameConcat_Dataset(Dataset):
                     frames = 2.0 * frames - 1.0  # normalization
                     shot_flag = [shot_flag[i] for i in frame_indexes]
 
-                global_captions, shots_captions = [], []  # read caption
-                caption_json_path = self.caption_json_path[idx]
-                with open(caption_json_path, 'r') as f:
-                    caption_content = json.load(f)
-                    global_captions.append(caption_content["global_caption"])
-                    shots_caption = []
-                    for i in range(len(frame_number)):
-                        # shots_caption.append([f'shot{i}:' + caption_content[f'shot{i}']])
-                        shots_caption.append([f'shot{i}:' + caption_content[f'shot{i+1}']])  # [NOTE] data index begin with Shot 1
-                    shots_captions.append(shots_caption) 
+                global_captions.append(caption_content["global_caption"])
+                shots_caption = []
+                for i, shot_key in enumerate(shot_keys):
+                    # shots_caption.append([f'shot{i}:' + caption_content[f'shot{i}']])
+                    shots_caption.append([f'shot{i}:' + caption_content[shot_key]])  # [NOTE] data index begin with Shot 1
+                shots_captions.append(shots_caption) 
                 if self.video_path is not None:
                     batch = {
                         "data_path": video_path if self.video_path is not None else None,
                         "data": frames if self.video_path is not None else None,
                         "global_captions": global_captions,
                         "shots_captions": shots_captions,
-                        "shot_flag": shot_flag if self.frame_number is not None else None,
+                        "shot_flag": shot_flag,
+                        "shot_frame_counts": shot_frame_counts,
+                        "raw_shot_frame_counts": raw_shot_frame_counts,
                         "idx": idx,
                     }
                 else:
@@ -180,13 +213,15 @@ class MultiShots_FrameConcat_Dataset(Dataset):
                         "global_captions": global_captions,
                         "shots_captions": shots_captions,
                         "shot_flag": shot_flag,
+                        "shot_frame_counts": shot_frame_counts,
+                        "raw_shot_frame_counts": raw_shot_frame_counts,
                         "idx": idx,
                     }
 
                 return batch
             
             except Exception as e:
-                idx = (idx + 1) % len(self.video_path)
+                idx = (idx + 1) % len(self.caption_json_path)
                 print(f"[ERROR] Load data index {idx} occurs error {e}.")
 
     def read_video(self, video_path, max_frame_number):

@@ -1,0 +1,24 @@
+{
+  "sample_id": "151",
+  "global_caption": "The video contains 9 shots. The entire video maintains a neutral color tone, with natural ambient light and warm tungsten lighting creating a subdued and authentic lighting atmosphere. The performance content uses “咚哒咚咚、嚓嚓、咚——嚓” as the rhythmic backbone and is strictly synchronized with the editing.",
+  "frames_per_shot": [
+    25,
+    25,
+    21,
+    25,
+    41,
+    33,
+    33,
+    25,
+    17
+  ],
+  "shot1": "Shot 1 opens with a wide eye-level shot, using the door frame as a foreground boundary. Empty tables and a bar counter being cleared extend into the mid-to-background, with focus on the entrance. A doorbell rings, triggering a hard cut as the young woman pushes open the door, calmly and focusedly sidestepping decorations like folding an umbrella. Residual daylight from outside filters through the glass door, blending softly with indoor warm lighting.",
+  "shot2": "Shot 2 continues with a hard cut from the previous shot, switching to a medium follow shot at eye level. Uses the bar surface and pendant lights as leading lines. Coffee cups and cash register pass in the foreground, while the drum set near the window becomes clearer in the background. The young woman walks through the side passage behind the bar toward the window-side drum set.",
+  "shot3": "Shot 3 transitions via hard cut to a close-up with slight overhead angle. Composition focuses on drumsticks, foot pedal, and drumhead. Shallow depth of field compresses the background, leaving only blurred chairs and window reflections. Warm light falls on her hands and metal parts. She warms up by rotating the drumsticks and gently tapping the foot pedal to test rebound. Wood grain of sticks, spring mechanism, and subtle shoe sole movement are clearly visible. The camera slightly pushes in, synchronizing the mechanical",
+  "shot4": "Shot 4 hard-cuts from the previous shot to a close-up of the snare drum at eye level. The drum edge forms a horizontal composition, with focus locked on the drumstick impact point. Background cafe lights blur into soft bokeh. The drumhead vibrates slightly, and the stick rebounds clearly. The camera remains stable at macro-like distance, slightly pushing in.",
+  "shot5": "Metal stands and cymbals form a radial structure above the frame. Foreground shows rapidly passing drumsticks, background blurred outlines of windows and empty tables. The young woman enters high-speed rapid hitting, engaging shoulders, arms, and core simultaneously. The full drum kit begins interacting. Cymbals violently vibrate at “嚓嚓”, edges trembling and producing realistic motion blur. Sleeves and hair show minor flutter due to motion. The camera quickly pans along the arc of the drum kit with slight tilt adjustments. Editing aligns perfectly with each drumstick strike.",
+  "shot6": "Shot 6 hard-cuts to a close-up at eye level, focusing on crossed hand rolls. One drumstick diagonally cuts the frame in the foreground, the other enters from below in reverse direction, forming clear crossing lines. The young woman rapidly switches wrists, alternating hands in roll patterns. Movements are dense yet rhythmically stable. Drumheads and cymbal edges show fine deformation and vibration under continuous hits. Lighting remains neutral-warm without exaggerated flickering. The camera makes short circular movements, emphasizing cross-trajectories and rhythmic layers. At this point, “咚哒咚咚、嚓嚓” progresses into a denser section, emotional tone shifts from restraint to intense focus.",
+  "shot7": "Shot 7 transitions via hard cut to a wide overhead shot. The full drum kit is fully framed, surrounded by empty tables creating spatial negative space. Reflections near the window and indoor warm lighting together evoke the atmosphere of nearing closing time. The young woman sits centrally, continuing her performance. The full drum kit resonates throughout the cafe. Foot pedal drives low frequencies, snare and cymbals create layered progression in space. The camera slowly lowers from above and slightly pushes in, highlighting the relationship between performance and environment. drumming dominates absolutely.",
+  "shot8": "Blurred cymbal edge moves in the foreground, background shows soft lights and table reflections. Sweat glistens briefly under warm light then slides down quickly. Chest rise and foot pedal frequency jointly drive the climax. The elongated feel of “咚——嚓” is maximized here.",
+  "shot9": "Shot 9 hard-cuts at the final heavy strike to a medium eye-level shot. Composition centers the young woman and full drum kit. Surrounding empty tables remain still amid faint echoes. The final hit lands, drumsticks freeze momentarily, cymbal vibrations decay slowly. The cafe regains its pre-closing quiet. Lighting remains subdued neutral-warm. The camera extremely slowly pulls back and fades out at the end, allowing the echo to naturally dissipate in space."
+}

@@ -1,0 +1,30 @@
+{
+  "sample_id": "63",
+  "global_caption": "The video contains 12 shots and depicts a high-saturation pixel-style post-apocalyptic wasteland workplace negotiation. The overall color palette blends warm sand yellow, rust red, and cool gray-blue tones, with lighting dominated by diffused daylight filtered through sandstorms and occasional cold flashes from distant lightning striking windows. No",
+  "frames_per_shot": [
+    21,
+    21,
+    17,
+    21,
+    17,
+    13,
+    21,
+    17,
+    17,
+    25,
+    29,
+    25
+  ],
+  "shot1": "Shot 1 opens with a fade-in, using a wide overhead composition to center a ruined business tower, with broken overpasses and half-buried billboards in the foreground and a pixelated sandstorm swallowing the city skeleton in the background. Depth of field is deep, drawing the eye upward along cracks in the tower. The structure sways slightly in the wind, shattered windows reflecting dim cold light. The camera slowly descends and moves forward slightly from above, while metal sheets rattle faintly and distant thunder lowers the",
+  "shot2": "Shot 2 follows with a hard cut, switching to a full-frame eye-level shot with lateral tracking, moving through a broken doorway into the conference floor. Two teddy bears sit opposite each other across a rusted table—the red-tied teddy on the left foreground, the opponent teddy in the right midground, and the gray rabbit secretary standing slightly behind and to the right, forming a triangular composition. Cracks on the table and fallen folders act as leading lines toward both parties. Sand still infiltrates the room, broken blinds casting intermittent striped shadows, and the plush surfaces gently flutter in the breeze.",
+  "shot3": "Shot 3 cuts sharply to a close-up eye-level shot, focusing on a water purification chip inside an old briefcase. The blurred front lid frames the shot, while the two teddies in the background appear only as pixelated silhouettes. The chip emits a faint cyan-blue glow, contrasting sharply with surrounding rust stains. The shock-absorbing foam inside has aged and cracked. The camera pushes in extremely slowly, accompanied by a clearer metallic creak, clearly establishing the chip as the core of the negotiation.",
+  "shot4": "Shot 4 cuts sharply to a close-up eye-level push-in on the red-tied teddy, occupying the left half of the frame, with the corner of the table and the blurred chip in the lower right creating directional pressure.",
+  "shot5": "Shot 5 connects via a short hard cut, using a medium overhead shot with slight downward tilt. The gray rabbit secretary steps forward from the side of the table and steadily pushes a worn contract from the right edge of the frame to the center. In the foreground, the red-tied teddy’s furry paw rests on the edge of the table; in the background, the opponent teddy subtly tenses. The paper edges curl, pixel-style stamp area and clause lines are clearly visible.",
+  "shot6": "Shot 6 cuts sharply to an overhead close-up of the tabletop, where several old batteries are arranged like stakes, surrounded by the contract, chip case, and a metal seal, forming a tense geometric relationship. Light slants diagonally through the broken window, highlighting scratches and oxidation marks on the battery casings under high-saturation pixel blocks. A gust of wind enters through a crack, causing paper corners to flutter.",
+  "shot7": "Shot 7 cuts sharply to a close-up eye-level shot of the opponent teddy, using a slightly off-shoulder composition that blurs the red-tied teddy’s shoulder in the left foreground, creating a reverse-angle setup.",
+  "shot8": "Shot 8 transitions via a quick lateral cut, shifting to a medium-wide side-view tracking shot. The camera slides from the table to the broken window, transitioning focus from indoor negotiation to the approaching sandstorm. The broken window frame creates strong vertical division. Outside, a wall of yellow-brown sand rolls forward, distant ruins gradually swallowed. Occasional lightning flashes coldly behind clouds.",
+  "shot9": "Shot 9 cuts sharply back indoors, using a close-up overhead shot. One furry paw of the red-tied teddy suddenly grips the metal seal tightly. The foreground shows slightly rippling contract edges, with the blurred chip case in the background. The seal edge sinks into the fur—small action, clear force. Dust particles jump lightly on the table due to vibration. no This pause makes the psychological buildup before the counterattack visible.",
+  "shot10": "Shot 10 cuts sharply to a close-up low-angle push-in. The red-tied teddy stands up from its seat, appearing more imposing from the low angle. Sand-colored daylight from the broken window outlines its edges with a rough bright rim. Its red tie flutters slightly in the wind. The camera simultaneously pushes forward.",
+  "shot11": "Shot 11 connects via a brief silence followed by a hard cut, using a medium eye-level shot. All three plush toys return to the same frame, with the table serving as the horizontal axis. The gray rabbit secretary adjusts the document position. Their actions form a stable and controlled convergence. No extra",
+  "shot12": "Shot 12 transitions via a fade-out and fade-in spatial shift, pulling back to a wide eye-level exterior shot. The ruined business tower stands again amid wind and sand. Two teams of plush toys exit through different doors—one team carrying the contract on the left, the other carrying the chip on the right. Footprints in the sand are quickly buried. Foreground features curled metal sheets and broken road signs; background sandstorm continues to approach but hasn’t fully consumed the building. The camera continuously pulls back and slightly elevates, showing both sides gradually separating within the same frame. Wind becomes the sole dominant"
+}

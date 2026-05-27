@@ -1,0 +1,26 @@
+{
+  "sample_id": "145",
+  "global_caption": "The video consists of 10 shots and features a medieval magical castle piano solo in a low-saturation watercolor illustration style. The overall color palette blends cool gray-blue and beige-gold tones, with soft lighting and side lighting unifying the visual composition. The emotional tone remains consistently calm and focused.",
+  "frames_per_shot": [
+    25,
+    21,
+    21,
+    21,
+    21,
+    25,
+    25,
+    29,
+    29,
+    29
+  ],
+  "shot1": "Shot 1 opens with a fade-in, a wide overhead composition guiding the eye toward the center via the arches and tiled perspective lines of the stone corridor. A girl child runs from the depths of the corridor toward the Slightly blurred foreground columns enhance depth, while soft light from side windows and faint candle shadows on the wall outline her silhouette. The camera moves forward slightly along the corridor with subtle follow motion, establishing the castle space and the momentum of rushing to perform.",
+  "shot2": "Shot 2 cuts hard from the previous shot, a close-up eye-level view focusing on the wooden door and her upper body holding the The door frame acts as a natural frame within the frame, focus on her outstretched hand and old wooden doorknob, background corridor quickly blurred. The hinge creaks softly as the door slowly opens, perfectly timed after \"三、四\". Soft side light filters through the gap, illuminating her back of hand and the edge of the The camera makes a very short push-in, heightening the sense of imminent entry into the",
+  "shot3": "Shot 3 cuts hard into the room, a close-up eye-level shot focusing on the lid of the ancient upright piano and her hands. A slightly blurred corner of the Wood grain and metal hinges appear warm and soft under the low-saturation watercolor texture. The camera begins a minimal horizontal shift from static, guiding the viewer’s gaze toward the keyboard.",
+  "shot4": "Shot 4 cuts hard from the previous shot, an overhead close-up of the black and white keys. Shallow depth of field makes the tip of her right index finger the absolute focal point. Soft light from the side window leaves a quiet cold highlight on the keys. She first tentatively places her right hand on a key, producing a single crisp and short note. The downward press, key rebound, and slight wrist lift are clearly visible. The camera maintains the overhead angle but performs a very short slide, emphasizing the cautious precision of the test note.",
+  "shot5": "Shot 5 connects to the previous shot with a brief hard cut, a medium eye-level shot showing the full piano and her seated posture. The piano bench, Background candlelight flickers slowly on the stone wall. The Then she sits firmly, back straight, both wrists raised. Her expression shifts from hurried urgency to pre-performance concentration.",
+  "shot6": "Shot 6 cuts hard to a close-up, a close eye-level shot focusing on alternating left and right hand key presses. Black and white keys extend alternately in foreground and background. Soft lighting softens the contours of knuckles and backs of hands.",
+  "shot7": "Window bars create vertical division, candle shadows gently sway on the stone wall. The foreground shows slightly blurred edge of the piano. The camera pans laterally with slight tilt adjustment, allowing light and",
+  "shot8": "Shot 8 cuts hard from the previous shot, an overhead wide-angle view of the entire keyboard. The camera height is higher, the full row of black and white keys like an unfolded road spanning the frame. Both hands move from the middle to both sides and then return, creating clear spatial span and rhythmic tension. Foreground shows rapidly passing wrists, background Side lighting remains consistent, with clearer reflections only on highlighted keys. The camera performs a brisk lateral follow, accurately tracking the hands’ cross-keyboard movement.",
+  "shot9": "Shot 9 transitions from the previous shot via a soft short fade-in/fade-out to a close-up eye-level view of her face. Composition places her face on the right, with blurred left side still showing rising and falling hands and a few keys, creating dual focus on expression and motion. Soft light wraps around her cheeks, side light outlines eyelashes and nose bridge. The camera slowly pushes in, drawing viewers into her internal rhythmic control.",
+  "shot10": "Shot 10 cuts hard back to a wide eye-level shot, fully presenting the Stone walls, side window, candlelight, piano, and the girl child seated before it all return to a unified fairy-tale composition. A small amount of empty space in the foreground allows the echo to seem to have a place to rest. As the final note is pressed, her fingers stabilize and her wrist slowly relaxes. After the key rebounds, the entire room briefly freezes. Echoes gently spread and fade between stone walls. Candle shadows continue to flicker. Only the final sustain extends to the end. The camera extremely slowly pulls back and holds still for the last half second, letting the closing resonance naturally settle into the air of the castle."
+}

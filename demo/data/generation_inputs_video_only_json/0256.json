@@ -1,0 +1,28 @@
+{
+  "sample_id": "256",
+  "global_caption": "The video consists of 11 shots. It is a realistic-style multi-person The lighting features natural sunset and warm glow from roadside shops, occasionally punctuated by backlighting from passing car headlights, creating a high-end realistic texture. The camera movement starts reserved and gradually becomes relaxed. The entire The emotional arc transitions from brief surprise to warm resolution.",
+  "frames_per_shot": [
+    21,
+    21,
+    21,
+    21,
+    21,
+    17,
+    21,
+    21,
+    21,
+    25,
+    37
+  ],
+  "shot1": "Shot 1 opens directly with a wide overhead view of a city intersection. Crosswalk lines, road signs, and evening rush-hour traffic form clear leading lines. Blurred pedestrians pass in the foreground. Focus centers on an Asian young woman walking briskly while carrying books. Warm orange sunlight bathes the end of the street, gently lifting book corners and strands of hair. The camera slowly pushes forward, establishing the real street environment and character movement direction.",
+  "shot2": "Shot 2 hard cuts from previous shot. Medium-close eye-level shot of an Asian young man standing by the roadside. Background shows streets warmed by sunset and blurred car lights. Composition places his shoulder on the right side of frame, gaze directed left toward incoming traffic and people. Camera performs a short push-in to intensify the emotional shift upon recognition.",
+  "shot3": "Shot 3 uses reverse-angle hard cut from previous shot. Close-up eye-level shot of the young woman stopping on the roadside. She briefly tightens then relaxes the books in her arms. Sunset light from behind softly outlines her face. ambient traffic Camera remains steady, only subtly pushing in to capture the gentle expression after reunion.",
+  "shot4": "Shot 4 transitions via fade-in hard cut into dual medium shot eye-level. Both stand facing each other on the roadside. Composition uses sidewalk edge and parked cars for horizontal layering. Foreground features low curbs, background blurred neon and moving car lights. Focus lies on the subtle air between them. After brief silence and repeated eye contact, they laugh simultaneously. Shoulders visibly relax. Camera makes slight lateral move to adjust their positions, allowing awkwardness to naturally dissolve into familiarity.",
+  "shot5": "Shot 5 hard cuts into close-up overhead shot. An old keychain is pulled out from the edge of the woman’s book. Metal surface reflects warm light under fading sun. Shallow depth of field blurs background into soft bokeh. The man’s fingers hover near the edge of frame without touching—motion paused in restraint. Tone shifts from surprise to tenderness. Camera executes extremely slow push-in, emphasizing the time-evoked emotion triggered by the object.",
+  "shot6": "Shot 6 hard cuts to close-up eye-level of the young woman. She glances down at the keychain, then lifts her eyes to meet his. Background features brightening coffee shop window glow. Her face is wrapped in soft golden light. Composition keeps the keychain just below focal plane, forming emotional connection. Camera nearly static, only slightly tilting up at the end to follow her upward gaze.",
+  "shot7": "Shot 7 transitions via fade-in/fade-out from previous shot. Full shot from rear-side follows both beginning to walk side by side along the street. Books held in front. The other’s steps initially hesitant, then gradually synchronize. Coffee shop windows emit continuous warm light. Glass reflects sunset and passing vehicles. Ground is patterned with light shadows. Camera smoothly tracks forward. Narrative shifts from stationary conversation to renewed companionship in motion.",
+  "shot8": "Shot 8 hard cuts to side close-up eye-level. Both shoulders occupy center frame. Blurred pedestrians occasionally pass in foreground, adding realism. Focus leans toward the speaking young man. He looks ahead, then turns head sideways. Lips match Listener’s reaction is preserved—her gaze lowers slightly, she inhales gently, preparing to respond. Lightboxes and shop windows reflect flowing highlights on their faces.",
+  "shot9": "Shot 9 hard cuts using reverse-angle from previous shot. Medium-close side-front shot of the young woman. She turns head slightly toward distant sunset. Background sky transitions from orange-pink to pale blue. Street architecture creates stable depth. Final syllable coincides with a light wave of traffic Camera gently pushes in, highlighting the weight of this response.",
+  "shot10": "Shot 10 transitions via soft dissolve into dual close-up eye-level. Both turn toward each other, sharing a smile. Car lights sweep across one side of the street, leaving temporary glowing edges on their faces. Composition places both faces on separate focal planes, with small air gap between—familiar yet reserved. Smile feels more natural than before; eye contact lasts longer.",
+  "shot11": "Shot 11 fades in and pulls out from previous shot. Wide eye-level shot concludes. Both continue walking toward the warm glow of the corner coffee shop. Street perspective leads figures into depth. Occasional car bodies glide through foreground, creating natural obstruction. Background neon brightens but color temperature stays within warm range. Slightly delayed, the young man looks at her, accurately responding \"不会了\". Camera continuously pulls back and slightly elevates, ending the long-awaited reunion in a warm, reserved urban evening."
+}

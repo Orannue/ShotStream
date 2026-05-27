@@ -1,0 +1,24 @@
+{
+  "sample_id": "214",
+  "global_caption": "The video contains 9 shots and is a realistic, high-saturation post-apocalyptic science experiment short film. It features a striking contrast between warm and cool tones in a dusty ruin aesthetic, with natural harsh desert lighting and localized warm heating light from the experiment station as the primary lighting.",
+  "frames_per_shot": [
+    29,
+    21,
+    29,
+    25,
+    21,
+    25,
+    29,
+    29,
+    37
+  ],
+  "shot1": "Shot 1 opens with environment establishment, wide overhead composition showing collapsed highway, scattered debris, and fluid experiment station made from scrap metal all entering frame simultaneously. Foreground features wind-moving dust, background shows broken bridge deck and tilted road sign. Focus lands on the dusty eagle and rusted apparatus at the center of the experiment station. Sunlight slants down from above, casting glaring highlights on metal edges. Camera slowly descends in overhead tracking.",
+  "shot2": "Shot 2 enters via hard cut to close-up eye-level. Composition compressed to one corner of the experiment station. Blurred foreground metal coil forms leading lines. In mid-ground, eagle raises a sharp claw to activate the heater, rust-colored button glowing faint orange. Dust particles stir as claw passes. Warm filament stands out vividly against cold gray scrap metal. Camera slightly pushes in. Pump",
+  "shot3": "Shot 3 enters via hard cut to close-up eye-level. Shallow depth of field blurs wasteland and eagle silhouette into indistinct color blocks, highlighting only oxidized texture of funnel edge and heavy tension of rising liquid surface. After heating, liquid transitions from stillness to slow undulation, reflective surface shimmering like thick glass. Warm light from below reveals deeper golden-brown layers.",
+  "shot4": "Shot 4 uses continuous action match-cut to side near-close-up with slow push-in. Liquid column beneath funnel slowly pulled into long thread by gravity. Foreground features blurred iron frame, background shows air distorted by heat waves. Narrow highlight along liquid edge under hard light indicates high viscosity and stretching resistance. Camera gently moves forward along liquid column. Old fan",
+  "shot5": "Shot 5 enters via hard cut to extreme close-up overhead. Frame nearly filled by droplet and metal plate below.",
+  "shot6": "Shot 6 cuts via hard cut to close-up eye-level. Eagle on left side of frame, right side shows flickering vintage gauge and heater knob. Blurred foreground tubing enhances spatial depth. Increase heat. Audibly, guitar re-enters with two short plucks, creating rhythmic pause matching judgment. Camera makes slight lateral adjustment, emphasizing observation and decision.",
+  "shot7": "Shot 7 uses hard cut to medium-close lateral pan. Camera moves from heater to space between hot fan and funnel. Fan blades visibly accelerate, stirring dust on table and feathers at eagle’s neck. Second droplet no longer lingers but gathers, shortens, and falls more decisively. Foreground fan guard creates repeating lines, background pump piston vibrates regularly. Lighting remains natural harsh light with warm device glow. Mechanical",
+  "shot8": "Shot 8 enters via match-cut action to overhead close-up. Camera shifts from metal plate to sandy ground. Two successive droplets land on fine sand, leaving viscous rings that slowly expand. First ring has uneven, thick edge; second is more complete and crisp. Sand grains wrapped into thin amber layer, creating clear material contrast. Focus smoothly transitions from previous residue to new mark. Camera slightly lowers and makes short lateral move. Pump",
+  "shot9": "Eagle stands beside scrap metal experiment station, backlit by tilted collapsed highway and dust haze illuminated by sunset. Occasional wind-blown sand particles pass in foreground, background wreckage remains motionless. Backlighting gives feather outlines and droplet paths fine bright edges. Camera slowly pulls back. Guitar ends with sparse trailing notes."
+}

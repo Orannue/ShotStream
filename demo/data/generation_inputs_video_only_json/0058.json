@@ -1,0 +1,28 @@
+{
+  "sample_id": "58",
+  "global_caption": "The lighting primarily uses natural and practical indoor illumination, with rich colors that remain grounded in realism. The camera movement evolves from controlled slow pushes and hard cuts in the first half to more expansive pull-outs and slight orbital movements in the second half. The core The emotional arc gradually shifts from confusion and suppression to determination and release.",
+  "frames_per_shot": [
+    25,
+    21,
+    13,
+    25,
+    21,
+    21,
+    17,
+    25,
+    21,
+    33,
+    25
+  ],
+  "shot1": "Shot 1 opens with a fade-in, using a medium eye-level shot from the side of the kitchen island. Blurred kettle and sliced toast create depth, focus on the young man’s profile and hands. The morning kitchen is lit by warm, high-saturation natural light, with eggs, butter, and cups on the counter. The camera slowly pushes in, revealing lingering uncertainty in his eyes.",
+  "shot2": "The second shot cuts abruptly from the previous one, using a long shot with a slight high angle, looking forward from the back of the classroom. The neatly arranged desks form leading lines, while the depth of field keeps both the empty classroom and the job application form in front of him sharply in focus. Cool morning natural light from the windows falls onto the desks. He sits motionless, staring blankly, his pen hovering in mid-air without touching paper. The camera performs an extremely slow tracking movement along the aisle, emphasizing his isolation within the orderly environment.",
+  "shot3": "The composition centers the corner of the textbook page and the tip of the pen in the frame, with slightly curled paper edges in the foreground and a completely blurred background. Natural light from the classroom window continues to be used, but now more focused, highlighting the texture of the paper fibers and ink marks.",
+  "shot4": "The metal bar edge and cup rack create foreground-background layers, focusing on the space between him and the machine. Warm interior lighting blends with daylight for consistent realistic high saturation. Some words are briefly swallowed by steam, creating authentic layering. The camera makes a small arc around the bar, conveying busyness and inner tension.",
+  "shot5": "Stacked files appear in the foreground edge, computer screen and folders framing the subject. Focus rests on his paused finger and hesitant eyes. Cold office lighting mixes with fading outdoor light, colors still saturated but more subdued.",
+  "shot6": "The hospital corridor creates strong one-point perspective, foreground empty. Focus tracks the crumpled medical report in his hand. Cold white ceiling lights and window natural light maintain unified realism. He walks in from one end, then slows.",
+  "shot7": "The door glass dominates the frame, blurred doorframe in foreground, focus on his reflection. Fatigue in the reflection slightly misaligns with his real body. Practical cold lighting remains, but reflection enhances pallor. He stops, gazes at himself. The camera gently tilts up and pushes in, deepening the introspective confrontation.",
+  "shot8": "Shot 8 transitions via brief fade-in/fade-out, returning to the café corner. Using a medium-level slight upward angle, table corner and window plant form foreground. Evening light outside and warm interior lamps envelop the subject. Depth of field moderately isolates him from the background. After finishing work, he sits, lowers head, then lifts it fully, opening his chest and releasing his Fingers loosen from the cup. The camera slowly pushes in from chest height, slightly rising, amplifying release.",
+  "shot9": "Shot 9 returns to the office with a hard cut, using a focus shift from close-up to medium-close. Focus starts on hand, then racks to face. Lighting remains cool practical mixed with soft warm reflections. He calmly removes his badge, gesture no longer hesitant. The badge hits the desk precisely on a lyrical accent—“工牌落下的那一声，比告别更像开始”. The crisp clink becomes the clearest rhythmic point. The camera gently pulls back, giving space to his decision.",
+  "shot10": "Shot 10 follows with a hard cut, using a wide-to-medium light orbiting upward angle. Dark silhouettes of empty desks in foreground, podium centered. Neon lights outside and indoor ceiling lights form unified nighttime realism. Saturated colors stand out in blackboard green, wooden desk brown, and exterior neon. Shoulders straight, eyes no longer drifting. As the final note stretches, the camera performs a slow half-orbit in front of the podium, then gently pushes to a chest portrait, reaching emotional climax.",
+  "shot11": "Composition places his figure slightly left, right side open to vast neon-lit cityscape. Quiet desk outlines in foreground, background lights softly blurred. Focus remains on his smiling profile. Nighttime neon and residual warm indoor light continue the film’s consistent lighting. Low-frequency city ambiance blends naturally with the sustained tone. The camera continues pulling back slowly, releasing him from personal struggle into broader space, concluding with a quiet, resolute smile."
+}

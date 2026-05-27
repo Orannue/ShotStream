@@ -1,0 +1,28 @@
+{
+  "sample_id": "122",
+  "global_caption": "The video contains 11 shots. The overall color palette transitions from dusk to early night, blending cool and warm tones. Natural daylight and backlighting from street lamps are the primary lighting styles. Camera movement is controlled and fluid. The overall mood is gentle and slightly melancholic.",
+  "frames_per_shot": [
+    25,
+    21,
+    21,
+    17,
+    21,
+    17,
+    21,
+    17,
+    25,
+    29,
+    37
+  ],
+  "shot1": "Shot 1: Fade in from black. Medium depth of field, dusk light not yet fully faded. Her figure appears quiet and clear against the low-saturation street backdrop. Her clothing flutters slightly in the breeze. Car lights are still dim but starting to flicker. The camera slowly pushes in and slightly shifts right to establish space.",
+  "shot2": "Shot 2: Hard cut from previous shot. Close-up eye-level frontal framing focuses on face and lips. Background blurs into soft edges of the stop sign and moving light spots. Lighting remains natural twilight with slight pre-warmth from streetlights. Lips move gently, articulation delicate and reserved.",
+  "shot3": "Shot 3: Action match cut from previous shot. Switches to medium rear-side tracking shot, eye-level perspective following her slow walk along the sidewalk. Foreground occasionally passes pedestrians’ shoulders for layering. Background shops and trees recede in shallow depth of field. Dusk deepens but tone remains consistent. Backpack sways gently with steps. Hair and hem follow naturally.",
+  "shot4": "Shot 4: Hard cut to close-up overhead shot. Focus centers on her shoe tip and white stripes of the crosswalk. Ground texture is sharp, edge reflections subdued. Still naturalistic lighting. Slight compression and rebound occur upon contact. Pant leg swing and weight shift are naturally connected.",
+  "shot5": "Shot 5: Reflection match cut from previous shot. Close-up side framing places shop window glass in foreground, showing both reflection and real figure side-by-side, creating dual character layers. Warm shop lights begin to intensify but remain unobtrusive. Real and reflected mouths sync perfectly. Steps continue without pause. Blurred car lights sweep across glass, adding motion. Camera moves laterally along the window with slight push-in, maintaining clarity of reflection.",
+  "shot6": "Shot 6: Fade transition from previous shot. Shifts to close-up low-angle shot. Composition draws high-rise buildings upward, leaving a narrow strip of sky between them as visual focus. Sky shifts from gray-blue to deeper blue. Streetlights now dominate as main light source. She looks up toward the sky gap between buildings, Subtle throat and jawline effort is visible. Backpack strap lifts slightly with head tilt. In Mood shifts from street observation to inner reverie. Camera gently tilts upward from chest height, amplifying the sense of looking up.",
+  "shot7": "Shot 7: Hard cut from previous shot. Close-up eye-level framing places roadside bench in mid-frame. Foreground features blurred pedestrian passing quickly. Background shows gradually lit shop windows and sparse tree shadows. Lighting mixes streetlamp glow and residual daylight. Legs sway gently back and forth. Shoe tips occasionally brush the ground. Shoulders relaxed, expression still gentle and slightly melancholic. Camera performs slow lateral micro-pan, preserving contrast between city flow and stillness.",
+  "shot8": "Shot 8: Cut-down transition from previous shot. Close-up overhead focusing on ground puddle and her detouring steps. Mottled light reflects on water surface. Shallow depth of field makes ripples the visual center. Main light comes from reflected streetlamps. She lifts foot to step around puddle edge. Airflow and footfall create fine concentric ripples. In Camera follows foot direction in small arc, emphasizing lightness of avoidance.",
+  "shot9": "Shot 9: Hard cut to medium eye-level shot. Alley entrance mural dominates background. Wall texture and graffiti blocks are desaturated to avoid distraction. Alley depth naturally continues prior street path. Body faces forward, head slightly turned toward camera. Fingers lightly touch backpack strap. Steps transition from continuous walk to brief pause.",
+  "shot10": "Shot 10: Fade into side-backlit close-up from previous shot. Streetlight from behind highlights hair strands and shoulder lines. Frontal face retains soft shadow. Composition places subject on left, right side holds empty street and moving light spots. Eyelashes and nose bridge are delicately outlined by edge light. Emotion feels more contained and sincere than before. Camera slowly pushes in and subtly orbits to a more side position, enhancing sense of approaching farewell.",
+  "shot11": "Shot 11: Hard cut to wide eye-level shot. Night-lit street end fully revealed. Road extension guides gaze to girl child standing in mid-to-rear frame. Distant car lights form soft light trails. Overall tone cooler but retains warm streetlamp glow. She stops, slowly turns back during final note. Backpack still. Hem movement gradually ceases. Emotional closure completes this journey. In Camera maintains slight pull-back and remains steady, allowing scene to conclude naturally in the look-back."
+}

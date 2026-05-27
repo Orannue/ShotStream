@@ -1,0 +1,26 @@
+{
+  "sample_id": "140",
+  "global_caption": "The overall aesthetic is defined by a bold contrast of warm magenta and cool cyan neon hues, with primary lighting derived from internal neon edge glows and cold starfield backlighting visible through viewports. The camera movement evolves from expansive spatial establishment to strong rhythmic cuts in the middle section, culminating in a final freeze-frame.",
+  "frames_per_shot": [
+    25,
+    21,
+    21,
+    21,
+    25,
+    21,
+    21,
+    25,
+    29,
+    33
+  ],
+  "shot1": "Shot 1 opens with a fade-in, using a long-distance overhead view. Foreground shows slowly passing edges of the hull, midground features the glowing stage, and background displays vast viewports reflecting the starfield. Cold starlight and neon contour lighting unify the spatial atmosphere. The camera slowly pushes forward along the outer curve of the hull with slight pitch adjustments, establishing the grand scale of the space stage.",
+  "shot2": "Shot 2 cuts hard from the previous shot into the interior of the transparent dome, using a medium close-up eye-level angle focused on the front-row lead boy. The subject is positioned slightly below center, with dome starlight above and blurred rows behind creating depth. Neon side-lighting defines facial contours, while cold backlighting highlights hair edges. The On-screen, consonant onset and vowel opening are precisely matched. The camera slowly pushes in, enhancing the lead’s immersive presence.",
+  "shot3": "Compositionally, front, middle, and back rows form distinct layers, with formation lines and internal light strips reinforcing strong order. The scene remains within the dome stage, continuing the neon edge glow and starfield backlighting.",
+  "shot4": "Shot 4 transitions via a quick whip pan to a zero-gravity corridor, using a medium upward-angle shot. Composition uses the ring-shaped corridor lights extending into depth as a visual guide, with flowing starfields visible outside transparent walls and handrails and floating micro-particles nearby. Clothing flaps show natural lag during movement. The camera follows the group backward with a smooth tracking move, creating a sense of rhythmic forward momentum.",
+  "shot5": "Shot 5 cuts hard into a circular chamber, using a wide overhead view with slight orbiting motion. The composition centers on a glowing circular ring on the floor, with the boys’ formation radiating outward from the center. Neon markings on the surrounding circular walls enhance rhythmic feel, maintaining consistent high-saturation cyberpunk coloration.",
+  "shot6": "Focus locks onto a group of boys’ mouths, nostrils, and jawlines, with softly blurred shoulder silhouettes in the foreground and background light strips compressed into thin neon spots. Emotional tone remains uplifting but more concentrated.",
+  "shot7": "Shot 7 cuts hard in sync with the previous shot to the back row, using a medium eye-level angle. The back-row boys are centered in frame, with blurred front-row shoulders forming a foreground layer for spatial progression. Starfield movement through viewports remains visible in the background, ensuring continuity. Chests rise uniformly during vocalization. The camera starts still then gently pulls back, emphasizing the response and bringing the orderly formation back into viewer focus.",
+  "shot8": "Shot 8 transitions via a cross-style cut, with the camera moving through a floating light array, using a dynamic close-up with combined tilt and pitch motion. Composition features glowing light bodies rushing past in the foreground, the boys’ group gradually emerging in midground, and colorful nebulae flowing outside transparent walls in the background. The full choir continues repeating and layering “我们把星光说成航线，把心跳说成远征”, with each syllable aligned with the moment light arrays pass and mouths open. The camera rapidly weaves through then gently lifts, building momentum toward the climax.",
+  "shot9": "The front-row lead boy is centered, arm raised to create a clear visual guide, with multiple rows fanning out behind him. Lighting highlights the lead’s face with neon side-light and cold backlight, expression firm and focused. The camera quickly pushes from chest height to the face, intensifying the command-like conclusion.",
+  "shot10": "The 10th shot connects to the final chapter with a brief fade-in/fade-out transition, using a wide eye-level shot. The composition places the entire choir in front of a massive viewport, arranged in neat horizontal rows. Outside the viewport, stars flow slowly and neon nebulae drift by; faint light reflects on the foreground floor, while the background remains deep and vast, making the choir appear suspended at the edge of the universe. The cool-toned starfield backlighting and the neon edge lighting inside the cabin maintain a consistent visual style. After the final note fades out, the entire group freezes in unison, closing their lips simultaneously after the last syllable, holding steady breaths and lifting their heads straight forward, forming a sculptural concluding image."
+}

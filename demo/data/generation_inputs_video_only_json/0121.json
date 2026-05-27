@@ -1,0 +1,20 @@
+{
+  "sample_id": "121",
+  "global_caption": "The video contains 7 shots. This is a realistic low-saturation folk solo short film, primarily using natural light and soft backlight as the visual tone, with colors blending gray-blue and warm brown tones. The overall camera movement is slow and fluid. The",
+  "frames_per_shot": [
+    33,
+    29,
+    37,
+    41,
+    33,
+    33,
+    33
+  ],
+  "shot1": "Low-saturation natural light evenly illuminates the scene. Camera performs a slight pull-back tracking shot, gradually bringing the subject closer into space.",
+  "shot2": "Shot 2 cuts hard from previous shot, close-up at eye level focusing on chest and hands, shallow depth of field locking focus on guitar headstock and the man’s slightly wrinkled fingers, background trees blurred into soft color patches. He stops, slightly lowers head to tune, left hand slowly turns tuning pegs, right hand plucks single notes. Lighting remains natural dappled light from the forest. Camera subtly pushes in, precisely capturing string vibration and finger pauses.",
+  "shot3": "Shot 3 transitions smoothly from previous shot, medium shot at eye level following him as he emerges from forest edge. Composition places subject slightly left, opening up brighter sea-sky space on the right, creating a visual transition from enclosed to open.",
+  "shot4": "Shot 4 cuts hard to expand space from previous shot, wide shot from low angle arriving at open sea cliff area. Subject stands slightly off-center at cliff edge, foreground features undulating rock surface and short grass, background shows vast sea and distant gray-blue horizon. Still low-saturation natural light, but sea reflection slightly brightens subject outline. Camera slowly pushes in from distance.",
+  "shot5": "Shot 5 transitions via slight dissolve to facial close-up, near close-up at eye level with slight upward tilt, background compressed into soft color blocks of sea-sky and backlight edge, focus on lips, crow's feet, and beard details. Soft backlight outlines facial edges. Camera very slowly pushes in slightly.",
+  "shot6": "Shot 6 cuts hard from previous shot to object detail, close-up from high-angle side view. Camera sweeps across seaside rock surface, foreground shows rough rock texture, midground passes over guitar's warm wood grain, worn edges, and transparent window of tape recorder showing slowly rotating tape reel. Focus shifts between guitar body and tape recorder. Subject's hand enters frame edge to complete one full strum. String vibration, tape reel rotation, strap sway, and fabric lifted by wind form continuous detail linkage. Natural side light enhances material texture. Camera performs low-level pan with slight tilt.",
+  "shot7": "Shot 7 concludes with fade-in/fade-out emotional resolution from previous shot, wide shot at eye level with backlight arriving at mountain summit endpoint. Foreground grass blades create slight obstruction in wind. Composition leaves ample sky for lingering resonance. Last strum completes without continuation. Tape recorder still spins gently. Backlight outlines silhouette with soft glow. Camera slowly pulls out and slightly tilts up, making him gradually shrink into mountain and sky horizon."
+}

@@ -1,0 +1,30 @@
+{
+  "sample_id": "2",
+  "global_caption": "The video consists of 12 shots and presents a realistic, warm-toned action short featuring high-tech bio-androids fighting in a twilight coastal forest. The overall tone is dominated by golden-orange sunset lighting and natural side-backlighting.",
+  "frames_per_shot": [
+    21,
+    21,
+    21,
+    17,
+    21,
+    21,
+    25,
+    17,
+    17,
+    21,
+    25,
+    25
+  ],
+  "shot1": "Shot 1 opens with a fade-in, wide overhead composition centering on the forest clearing, foregrounded by wind-bent pine branches, midground showing coastline and crashing waves, and background featuring two high-tech bio-androids facing each other at distance, lowering their centers of gravity and slightly raising arms in preparation. Warm sunset light from behind and to the side outlines their metallic shells.",
+  "shot2": "Shot 2 cuts hard from the previous shot, medium eye-level framing using diagonal tree trunks in the forest as leading lines. The two androids are positioned left and right in frame, focus follows hands and feet as small probing steps and forearm blocks continuously alternate. Movements escalate from light contact to brief collisions, with clothing edges and outer fiber layers trembling slightly during sudden stops. Lighting remains warm natural daylight.",
+  "shot3": "Shot 3 transitions via a hard cut matched to motion from the prior shot, close-up eye-level push-in. Blurred pine needles in the foreground sweep across the edge of the frame, focus locked on the intersection of a straight punch and opponent’s forearm parry. As the punch is deflected, fine sand and dust erupt from the ground. The kinetic chain from wrist, shoulder, to chest and back is clearly visible. Sunset creates brief highlights on metallic joints. The camera rapidly pushes in and slightly follows the hand.",
+  "shot4": "Shot 4 cuts hard to extreme close-up, low-angle slight upward tilt, focusing on the point of contact between elbow, shoulder-neck, and the opponent's force-deflecting gesture. Shallow depth of field blurs the coastal background into a warm bokeh. An elbow strike about to land is smoothly redirected, changing direction and briefly destabilizing the upper body before quickly re-centering.",
+  "shot5": "Shot 5 enters via a match-cut following the momentum direction from the previous shot, wide full-frame eye-level follow shot. The frame unfolds along a narrow forest path, foreground tree trunks swiftly passing to create speed layering. The two androids dash through the woods in succession, repeatedly changing lanes, kicking up pine needles and sand beneath their feet. Warm backlight filters through gaps in the trees, creating flickering light spots.",
+  "shot6": "Shot 6 cuts hard from the previous shot, close-up low-angle upward tilt, focus on the rising knee and hip-shoulder rotation used to deflect. Foreground shows a small stone vibrating after being stepped on, background retains forest edge and opening sea. A flying knee thrust comes in powerfully but is rotated aside by the opponent, generating arc-shaped displacement and center-of-mass reorganization. Fine vibrations occur in shell seams and edge components due to rotation. The camera first tilts up slightly, then makes a brief lateral move.",
+  "shot7": "Shot 7 transitions via a hard cut based on ground impact from the prior shot, medium-wide eye-level framing. Rock cracks and wave lines form converging leading lines toward the center. The two androids naturally transition from forest to seaside rocky terrain, engaging in rapid offensive-defense sequences in backlight. Punches, elbows, blocks, and lateral shifts occur sequentially along the same axis. Sea mist and backlight silhouettes sharpen the edges of movements.",
+  "shot8": "Shot 8 cuts hard to extreme close-up, overhead slightly angled foot framing, focus intensely on ankle joint and rock surface contact point. During abrupt stop, the outer sole presses down on gravel, tiny fragments fly outward. Warm sunset casts coarse texture on the rock surface.",
+  "shot9": "Shot 9 cuts hard following the direction of flying gravel from the previous shot, long-medium distant upward tilt. Composition creates clear intersecting arcs in mid-air. Backlight slices their leaping silhouettes into bright outlines. The camera rapidly tilts upward from below, synchronizing the heavy",
+  "shot10": "Shot 10 enters via a hard cut upon landing from the previous shot, medium-close eye-level framing. Foreground shows a blurred rock ridge, focus on arm entanglement and shoulder-back stress points. A brief arm lock is established and then instantly broken. The sequence reveals wrist rotation, shoulder pressure release, and torso sliding out in tight succession. Metal surfaces reflect warm glow under sunset but maintain realistic texture.",
+  "shot11": "Shot 11 transitions via a brief dissolve from the previous shot, wide eye-level slow pull-out. The cliff edge horizontally cuts the lower portion of the frame. Both androids simultaneously decelerate and re-stabilize, maintaining a reserved distance. Sea breeze ruffles their outer fibers and edge attachments. Movement shifts from intense confrontation to stable alertness. The camera continues pulling back,",
+  "shot12": "Shot 12 fades in and out from the previous shot to final wide static frame. Overhead slightly distant silhouette composition includes sunset sea, cliff outline, and both androids standing side-by-side in one frame. Focus shifts from action to overall atmosphere. They stand still as silhouettes in golden sky light. Distant waves roll, nearby wind rustles pine forest. Metallic echoes from earlier combat slowly decay. Primary lighting remains twilight backlight and natural environmental reflection."
+}

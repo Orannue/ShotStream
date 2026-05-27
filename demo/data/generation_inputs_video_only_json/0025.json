@@ -1,0 +1,24 @@
+{
+  "sample_id": "25",
+  "global_caption": "The video contains 9 shots and is a realistic-style action short film set in a post-apocalyptic wasteland featuring animals. The overall tone is cool and desaturated, with dust and rust permeating the air. The camera movement starts subdued and gradually accelerates. There is no Lighting primarily uses overcast natural diffused light and localized backlighting, maintaining a consistently tense and grim atmosphere.",
+  "frames_per_shot": [
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    29,
+    29
+  ],
+  "shot1": "Two male lions stand at opposite ends of the wasteland boxing ring. Foreground features twisted rebar and cracked concrete; background shows a gray-blue sky and rolling sandstorm. Cool lighting evenly suppresses depth. Manes are lifted by strong wind as both lions lower their bodies and slowly advance. Wind Camera slowly descends and slightly pushes in.",
+  "shot2": "Shot 2 connects with the previous shot via hard cut, medium eye-level lateral pan focusing on the circling paths of the two lions. Scattered tires and tilted car doors in foreground and background create spatial depth. They circle cautiously, shoulders rising and falling, front paws raised in defensive and aggressive stances. Paws step on gravel, kicking up brief dust clouds. Cold wind continues throughout the soundscape.",
+  "shot3": "Shot 3 connects with the previous shot via rapid hard cut, close-up high-angle shot magnifying the head and forepaws of one lion in the foreground, while the other approaches from behind and to the side in shallow depth of field. Headwind causes the mane to glow with sharp edge highlights. The main subject does not throw a direct punch but lunges forward aggressively, forepaws sweeping past the lens. Mane, saliva, and sand explode into the air. A deep roar intensifies at this moment. Camera briefly tilts back to simulate impact.",
+  "shot4": "Shot 4 connects with the previous shot via match-on-action cut, close-up side view. One lion suddenly shifts sideways into a low stance, twisting shoulder and torso to generate force. The other quickly tucks in and retreats to avoid frontal collision. The frame uses a broken car frame for horizontal obstruction, keeping focus tightly on the narrow gap between their bodies. Under cool natural light, muscle definition and airborne dust particles are clearly visible. Camera follows laterally in short distance.",
+  "shot5": "Shot 5 connects with the previous shot via hard cut, overhead medium-close shot revealing terrain danger. One lion, retreating rapidly, crashes into the edge of a wrecked car, slipping on the sloped metal and sand layer. The car door vibrates, producing a hollow metallic echo. The other stops two steps away, lowering its body to prepare. The shattered window creates a framing device, placing the pressured lion below to enhance instability. Wind is amplified by vehicle resonance. Camera makes a slight dive then stops.",
+  "shot6": "Shot 6 connects with the previous shot via brief dust cloud transition, follow shot from side-rear medium view. The slipping lion quickly regains balance, drives forward with front limbs, not delivering a damaging strike but launching a powerful frontal approach and shoulder charge. The other simultaneously sidesteps to evade. Dust trails form clear motion paths. Backlight turns airborne particles into silvery-gray specks. Camera rapidly pushes forward then slightly sways right.",
+  "shot7": "Shot 7 connects with the previous shot via hard cut, close-up eye-level shot capturing the moment the two lions pass closely. One lifts its head in an upward threatening gesture, nostrils flaring, eyes sharp. The other pauses briefly at extreme proximity, then blinks to avoid contact. Shallow depth of field blurs the background ruins into cold indistinct patches. Backlight only outlines mane edges and whiskers. Roar peaks here, but no direct injury is shown. Camera gently pushes in to intensify pressure.",
+  "shot8": "Shot 8 connects with the previous shot via short fade-in/fade-out, wide backlight shot reconstructing spatial relationship. Foreground dust blurs vision; background wreckage silhouettes are cut out by cold white backlight. Camera slowly pulls back horizontally.",
+  "shot9": "Shot 9 connects with the previous shot via action-linked hard cut, medium-close push-in as climax. One lion suddenly leaps onto the wreckage of a wrecked vehicle and lets out a high-position roar. The other stops in the dust, lowers its head, then steps aside to yield the center of the ring—establishing dominance without physical knockdown. Dust kicked up under backlight rolls in layers. Final roar overlaps with wind, then abruptly ends. Camera continues pushing in until mane and dust fill the frame, freezing on the grim aftermath of the wasteland."
+}

@@ -1,0 +1,20 @@
+{
+  "sample_id": "273",
+  "global_caption": "The video contains 7 shots and is a short tutorial-style fitness video in a realistic style with neutral color tones, set in a bright and airy gym environment, though the exercises are designed for home follow-along. The overall camera movement is crisp and smooth, prioritizing clarity in instruction. The entire video uses consistent Chinese Lighting relies primarily on natural light and soft overhead fixtures, maintaining a positive, encouraging, and steady emotional tone.",
+  "frames_per_shot": [
+    33,
+    33,
+    37,
+    33,
+    37,
+    33,
+    33
+  ],
+  "shot1": "Shot 1 opens directly with a wide eye-level shot, the yoga mat centered for stable composition, slight foreground space enhancing motion range, background showing a clean, bright gym equipment area but softly blurred, focus consistently on the full body of a young woman, lighting even and clear; Chinese",
+  "shot2": "scene remains in the same gym area, lighting continues the bright neutral tone; she begins demonstrating squats, completing a full cycle from standing to knee bend and back up, knee direction, gluteal sit-back, and abdominal tightening all clearly visible, core stays stable throughout, upper body not leaning forward excessively; Chinese",
+  "shot3": "Shot 3 enters ground training via a quick action match cut from the prior shot, using a near-medium shot with slight high-angle view, focus concentrated on shoulders, hands, core, and torso alignment, foreground shows hand placement on the floor, background extends along the mat surface, shallow depth of field does not impair action recognition; environment remains continuous without disruption, overhead light creates soft contour on shoulders and back; Chinese",
+  "shot4": "Shot 4 cuts hard from the previous shot, returning to a wide eye-level slightly low-angle shot, subject re-standing and centered in frame, background equipment lines clarify forward-backward movement, focus remains on full body; lighting remains bright, neutral tone consistent; Chinese",
+  "shot5": "The fifth shot follows the previous one with a fade-in transition, cutting to a close-up ground-level view. It uses a medium-close, slightly low-angle eye-level framing, positioning the upper body and arms as the main subject, with clear visibility of the mat's texture; focus is on the elbow bend, chest lowering, and core control. The scene remains continuous, with soft overhead lighting casting delicate highlights and shadows along the arm lines and shoulders. Chinese The camera slowly pushes in, emphasizing force output and proper form.",
+  "shot6": "Shot 6 cuts hard from the previous shot into the intensity peak, using a medium shot with slight high-angle view, subject's body forms a diagonal composition, limbs' alternating motion paths clearly visible in frame, foreground reserves hand placement area, background softly blurred without distracting; lighting remains consistent, tension created only through increased speed; Chinese",
+  "shot7": "Shot 7 connects to the previous shot through a fade-in/fade-out transition with slowed pacing, shifting to a medium eye-level shot that gently pushes into a close-up. The subject steps back onto the mat, creating a more stable composition, with background equipment softly blurred. Focus gradually shifts from full-body stretching movements to the face and upper body. Lighting remains naturally bright, with only soft backlighting added along the edges to outline her silhouette, enhancing the relaxed atmosphere of the cool-down phase. Finally, she stands facing the camera, in a natural post-exercise state with slight perspiration, summarizing key points."
+}

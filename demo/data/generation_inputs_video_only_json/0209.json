@@ -1,0 +1,24 @@
+{
+  "sample_id": "209",
+  "global_caption": "The video contains 9 shots and is a narrative short film set in a cyberpunk space hospital, featuring a visit scene. The overall aesthetic uses cool tones with blue-purple neon lighting, primarily illuminated by soft cool overhead light and reflections from the nebula outside the viewport. Camera movement is controlled and fluid. The The emotional tone remains subdued between quiet unease and gentle companionship.",
+  "frames_per_shot": [
+    29,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    29,
+    37
+  ],
+  "shot1": "Shot 1 opens with environment establishment, wide shot, eye-level perspective. Composition places the patient's bed slightly right of center, with viewport and conduits in background forming leading lines. Two teacup visitors with limbs enter from foreground left and approach the bed. Metallic floor reflects blue-purple neon; soft cool overhead light evenly highlights their cup edges. Thin steam rises. Camera slowly pushes forward.",
+  "shot2": "Shot 2 hard cuts from previous to close-up, eye-level view, focus on the patient teacup on the bed. Shallow depth of field blurs visiting teacups in background. Camera makes a slight push-in, amplifying vulnerability within gratitude.",
+  "shot3": "Shot 3 match cuts to extreme close-up, slight high angle. Frame shows only rim and partial cup body. Foreground blurs bed railings; background softened into blue-purple neon blocks. Fine cracks on rim clearly visible under cool light. Steam trembles due to tension; condensation droplets near cracks vibrate slightly. Camera nearly static with extremely slow lateral shift. Wind",
+  "shot4": "Shot 4 fade cut to two-shot close-up, eye-level view. One visitor in foreground side, patient in mid-ground on bed. Slight obstruction creates intimacy. Visitor leans in, handle-hand slightly raised, whispering '곧 나을 거야'. Other teacup’s gaze remains fixed. Soft cool overhead light covers upper halves; neon outlines sides. Camera slowly tilts down and gently pushes in, grounding comfort through language and action.",
+  "shot5": "Shot 5 smooth pan transition to medium shot, eye-level slightly upward. Camera glides from bedside to viewport. Foreground sweeps past visitor’s cup edge; background reveals blue-purple nebula and distant solar wind. Cold viewport light illuminates all three cups’ surfaces. Metal walls reflect fragmented neon. Steam floats more clearly in window light. Continuous camera pan links private emotion inside with vast cosmic chill outside. Wind howl slightly expands in",
+  "shot6": "Shot 6 hard cut back to patient close-up, eye-level view. Background viewport light diffuses into soft bokeh. Steam briefly releases then retracts. Tiny reflections near cracks shift with tremors. Camera slowly pushes in.",
+  "shot7": "Shot 7 action match cut to close-up, high-angle slightly level. One visitor extends handle-hand to grasp patient’s hand. Hand contact centered in frame. Another visitor watches from background. Shallow depth of field isolates grip as sole focus. Neon flows along both handles. Soft cool overhead light stabilizes contact point. Response '우린 여기 있어' synchronizes with grip. Camera gently tracks along hands, conveying transition from words to physical presence.",
+  "shot8": "Shot 8 fade into overhead wide shot. Two teacups surround bed. Bed sheet, monitoring wires, and grid floor provide order. Periodic cold light from external storm sweeps over their bodies. Steam slowly intertwines above, then separates. No further Only low wind, circulating air, and faint device ticking remain. Camera slowly hovers and lifts slightly, making silence itself part of the narrative.",
+  "shot9": "Shot 9 gradual pull-back transitions naturally to wide shot, eye-level view. Ward fully framed again. Two teacups maintain surrounding posture. Starfield outside deep and still. Internal neon no longer harsh but softly spread. Steam gradually merges into thin mist under cold light. Space feels finally relaxed. Camera continues pulling back until ward and cosmos are framed together."
+}

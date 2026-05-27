@@ -1,0 +1,32 @@
+{
+  "sample_id": "156",
+  "global_caption": "The video contains 13 shots and is a realistic high-saturation evening street saxophone performance set in an urban environment. The overall color palette features a blend of warm and cool neon city tones, primarily using natural twilight and neon edge lighting. The camera movement starts slowly, accelerates, then stabilizes for a smooth conclusion. The",
+  "frames_per_shot": [
+    21,
+    17,
+    13,
+    13,
+    13,
+    13,
+    21,
+    21,
+    29,
+    13,
+    21,
+    29,
+    17
+  ],
+  "shot1": "Shot 1 opens with a fade-in, a long shot at eye level following the subject, showing an African American street saxophonist walking from a street corner toward a crossroads lit by emerging neon lights. Twilight evenly covers the pavement, outlined by neon edges. His steps are steady, with his clothing and suspenders gently swaying. The camera smoothly follows him from behind and slightly to the side as he crosses the crosswalk.",
+  "shot2": "Shot 2 cuts hard from the previous shot to a medium shot at eye level, framing him on the sidewalk beside the intersection. Storefronts and streetlights appear softly blurred in the background. He stops, squats down, and opens the instrument case. Neon reflects off the velvet interior and metal clasps. Scattered applause remains faintly in the distance. The camera makes a slight push-in to allow viewers to see his hands retrieving the saxophone.",
+  "shot3": "Shot 3 transitions via action match cut to a close-up from a slightly overhead angle, focusing on the saxophone's curved body and keys. With shallow depth of field, the background reduces to flowing neon color blocks. Mixed warm and cool reflections glide across the metal surface. He holds the instrument steady with his thumb while quickly testing the keys with the other hand. The camera gently pans across the keys and engravings, emphasizing material texture and meticulous pre-performance checks.",
+  "shot4": "Shot 4 connects via J-cut: the The subject’s face and upper body dominate the frame, with neon signs in the background creating soft bokeh. Twilight enhances skin tone and facial contours, making them look natural and full. The camera pushes in very closely to enhance presence.",
+  "shot5": "Shot 5 cuts hard from the previous shot into a close-up from a side-eye-level angle, including both the neck of the instrument and his chest. His chest expands and shoulders rise slightly.",
+  "shot6": "Shot 6 matches the previous shot with a cut to a close-up from a front-side eye-level angle, focusing precisely on the lips, reed, and ligature contact point. Shallow depth of field blurs the entire city into soft light spots. Neon flashes bright highlights along the edge of the reed. He presses his lips onto the reed, subtly adjusting angle and pressure. Facial muscles engage in preparation. The camera makes only slight tilt adjustments to follow this precise motion.",
+  "shot7": "Shot 7 cuts hard at the moment of Foreground shows dancing fingertips; background features the high-gloss trajectory of the metal tube on his chest. Key rebound, pad opening/closing, and subtle tension in the back of the hand are all clearly visible.",
+  "shot8": "Shot 8 cuts to a medium shot at eye level with a pan, not directly facing the subject but capturing his reflection in the window. The real person glides past the edge of the frame, while the reflection becomes the visual focus. The glass overlays neon, streetlights, and his silhouette playing, forming layered urban textures.",
+  "shot9": "Shot 9 cuts hard from the previous shot to a low-angle close-up, looking upward from beneath the instrument. The saxophone bell and the subject’s face become the visual center. The background shows the boundary between newly lit neon and twilight sky, with edge lighting more distinctly outlining the silhouette. He lifts the instrument into a sustained high note, neck and cheeks tensing, eyes focused upward. As the note continues, reflections shift across the metal surface. The camera slowly pushes upward with a slight circular motion, amplifying the peak tension.",
+  "shot10": "Shot 10 cuts quickly at a rhythmic break to an overhead close-up, showing only the shoe tip and pavement. The edge of the crosswalk and tile gaps form a clear geometric composition. Warm streetlights cast short shadows.",
+  "shot11": "Shot 11 cuts back via continuous action to a close-up from a side-eye-level angle, framing the face, chest, and part of the keys within the same shot. The background remains consistent with neon bokeh and blurred pedestrian flow lines. Lips and cheeks show noticeable changes in controlling airflow. The new short phrase is softer and rounder than the previous one.",
+  "shot12": "Shot 12 fades from the previous shot to a long shot at eye level, placing the subject back into the overall neon-lit intersection environment. Blurred shoulders and backs of occasional onlookers pass in the foreground, while car lights and signs in the background create a flickering urban atmosphere. The camera slowly retreats, reintegrating the performance into the street scene.",
+  "shot13": "Shot 13 cuts hard from the previous shot to a close-up at eye level for the finale, focusing back on his face and the recently lowered saxophone. Metallic highlights still shimmer with lingering resonance. Neon edge lighting gently outlines his profile. He smiles and lowers the instrument, shoulders relaxing naturally. Applause gently supports the ending after the phrase. The camera makes a minimal push-in and holds on the smile and instrument reflection to complete the closure."
+}

@@ -1,0 +1,22 @@
+{
+  "sample_id": "47",
+  "global_caption": "The video contains 8 shots. It is a narrative short film in neutral-toned anime style, unified by natural lighting and golden hour across coastal and forest environments. The color scheme is subdued with soft golden hues. Camera movement starts reserved and distant, gradually becoming softer and more expansive.",
+  "frames_per_shot": [
+    29,
+    25,
+    25,
+    29,
+    33,
+    33,
+    33,
+    37
+  ],
+  "shot1": "Shot 1 opens with environment establishment, wide overhead slightly panning composition. A path from the forest edge diagonally cuts into the distance toward the coastal ridge. Natural dawn light evenly spreads, creating soft highlights on metallic edges. Piano enters with sparse notes. Camera slowly pans horizontally to follow, establishing emotional distance.",
+  "shot2": "Shot 2: Hard cut from previous shot, close-up eye-level lateral tracking through the woods. Tree trunks form foreground framing, focus on the humanoid girl’s face and shoulder structure. Background blurred into soft green-gray. She turns her head toward the side but avoids direct eye contact, lips and jaw precisely moving to say \"You never trust my upgrades. Camera smoothly glides along her motion path.",
+  "shot3": "Shot 3: Hard cut from previous shot, extreme close-up low-angle push-in by a stream. Foreground shows wet stones and reflective flowing water. Midground focuses on the father robot’s worn hand slowly clenching an old family chip. Chip edges show scratches and faded numbering. Background blurred stream and forest shadows. Morning light filters through leaves, creating dappled highlights. Lens pushes from static to extreme close-up, compressing silence emotionally.",
+  "shot4": "Shot 4: Fade cut from previous shot, medium shot high-angle composition on a winding mountain trail. Curved path leads the eye to the father robot standing on the slope. The humanoid girl appears slightly lower in the foreground, out of focus. \" Guitar and piano briefly pause then resume. Camera gently tilts up and pushes in, emphasizing the emotional progression of this confession.",
+  "shot5": "Shot 5: Hard cut from previous shot, dynamic follow shot transitioning from wide to medium on a seaside cliff edge. Left side opens to dramatic sea cliffs and crashing white waves; right side shows narrow ridge path. Strong wind flaps clothing and exposed cables. The girl’s feet slip on loose rocks, body losing balance toward the sea. The father robot lunges from behind, grabs her arm, and pulls back using his center of gravity. Motion clearly stages initiation, imbalance, grab, and pull-back. Stress changes visible at metal joints. Camera first rapidly shifts sideways following the fall direction, then abruptly stops and slightly zooms in to freeze the moment they regain balance.",
+  "shot6": "Shot 6: Brief fade-in/fade-out transition from previous shot, near sunset beach close-up eye-level two-shot. Foreground shows spread tool cloth and old Midground: both characters squat side by side. Background: sea surface dyed warm gold by sunset. Backlight outlines their mechanical silhouettes. Focus on both hands jointly wiring, calibrating, and snapping the casing shut. Module transitions from inert to glowing faint indicator light, then emits test tone. Repair process clear and coherent. Piano and guitar begin to echo each other. Camera slowly pushes in with slight downward tilt, highlighting relationship easing after joint repair.",
+  "shot7": "Shot 7: Soft hard cut from previous shot, close-up eye-level reverse-angle shot of the girl. Father robot’s shoulder forms blurred foreground silhouette. Background: twilight horizon and lingering glow. Lighting remains naturally warm-cool boundary without overstatement. Girl’s gaze first falls on the repaired module, then lifts to him.",
+  "shot8": "Shot 8: Fade-out wide shot to conclude. Dusk beach wide pull-out. Father-daughter robots walk side by side from midground toward distant lighthouse. Repaired old Piano main theme and guitar arpeggios fully unfold. Foreground: tide repeatedly washes over sand. Background: lighthouse gradually lights up amid blue-gold sky. Composition guides the pair from center to far right. Relationship shifts from parallel to connected."
+}

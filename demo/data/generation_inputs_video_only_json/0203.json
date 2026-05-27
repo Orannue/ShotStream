@@ -1,0 +1,24 @@
+{
+  "sample_id": "203",
+  "global_caption": "The video contains 9 shots. It is a watercolor picture book style short film of a medieval magical castle chemistry experiment, using neutral tones and soft paper-texture surface quality, primarily featuring cool stone-gray, aged parchment beige, and low-saturation metallic copper colors. Lighting is consistently based on natural soft light from stained glass windows and warm ambient glow beneath vessels. All character",
+  "frames_per_shot": [
+    29,
+    25,
+    25,
+    25,
+    29,
+    25,
+    29,
+    33,
+    29
+  ],
+  "shot1": "The boy wears a simple lab apron, steps light and steady.",
+  "shot2": "Shot 2: hard cut to close-up, side view, tracking pan — the camera glides along the edge of the stone table, foreground sweeping past brass supports and glass narrow-neck bottles, focus on the boy’s extended hand and the small flame device beneath the glass vessel beside the table. Interior lighting continues the mix of soft window light and warm fire glow. He touches the ignition rod to the flame port; the small flame ignites steadily from dim to bright, warm reflection appears on the bottom of the glass. The tracking pan precisely follows the hand motion. The brass bellows",
+  "shot3": "Shot 3: match-cut transition to extreme close-up, overhead — desktop composition is orderly, spiral glass tube centered, flanked by containers of blue and gold liquids. Shallow depth of field blurs background parchment and brass measuring tools. The boy slowly pours both liquids into the same flask; blue and gold liquids slide down the spiral tube wall, layers accumulate in the flask, tiny bubbles rise along the liquid column. The camera maintains slight downward pressure to emphasize material change.",
+  "shot4": "Shot 4: hard cut to extreme close-up, eye-level, dolly in — the flask nearly fills the frame, foreground glass edge refracts cold color patches from the stained glass, focus tightly locked on the liquid inside. Light remains soft but flame reflection warms the base. The mixed liquid initially stays indigo, then a jade-green diffusion band emerges in the center, spreading like ink slowly bleeding on paper. The dolly-in makes the color shift clearer from overall to local texture. The harpsichord adds a brighter broken chord at the color transition point, liquid flow",
+  "shot5": "Shot 5: brief dissolve to close-up, low angle — camera looks up from the edge of the stone table, brass valve in the foreground, the boy’s hand and face in the same focal plane. The low angle creates an upward action chain of valve, flask, and his focused expression. Background is soft light from high stained glass. He slowly turns the brass valve; Fine mist first rises in the flask, then gathers on the inner walls and gradually solidifies into translucent jelly-like substance. The camera slightly follows the hand in an arc-shaped movement.",
+  "shot6": "Shot 6: hard cut to extreme close-up, overhead — perspective returns to objective documentation. Flask opening, gel surface, and tiny bubbles form main visual focus. Foreground is a blurred measuring spoon, background blurred stone table texture. Gel has stabilized, color slowly fading from jade green edges to amber, internal translucent layers and slowly moving thread-like patterns visible. Camera sinks extremely slightly closer, emphasizing surface viscosity and color gradation. Harpsichord slows, gear stirrer",
+  "shot7": "Shot 7: hard cut to medium shot, eye-level, tracking pan — camera slides from the side of the flask to the boy’s face, using parallel composition of person and table. Foreground is the finished container, background softly blurred bookshelf and hanging tools. Soft window light illuminates his eyes and slightly raised lips.",
+  "shot8": "Shot 8: soft fade cut to close-up, low angle, pull out — the boy carries the finished product to the stained glass window. Initial focus is on the edge texture of the translucent gel in the container, then as the camera pulls back, his upper body and the window are gradually included. Low angle outlines the container sharply against window light. Amber gel shows fine phase transition textures and translucent layers, refracting gentle glow like thin honey. He gently rotates the container to observe changes from different angles. Pull-out expands spatial relationship. Bellows",
+  "shot9": "Shot 9: hard cut to wide shot, overhead, slow pull out — entire alchemy lab returns to tranquility. Stone table, glassware, brass pipes, valves, and high windows form clear order in overhead composition. Boy sits back at the desk, places the finished product aside, writes down experimental results on parchment with the other hand. Fine scratching Window light and residual fire maintain consistent lighting tone. Camera slowly pulls back, shrinking the figure into quiet space."
+}

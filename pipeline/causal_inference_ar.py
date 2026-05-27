@@ -7,7 +7,25 @@ from model.base import FrameConcatCausalModel
 from einops import rearrange
 
 import peft
+from utils.shot_frames import (
+    latent_frames_for_video_frames,
+    nearest_4n_plus_1,
+    video_frames_for_latent_frames,
+)
 # from peft import get_peft_model_state_dict
+
+
+def _as_int_list(value):
+    if value is None:
+        return []
+    if isinstance(value, torch.Tensor):
+        return [int(item) for item in value.detach().cpu().reshape(-1).tolist()]
+    if isinstance(value, (list, tuple)):
+        output = []
+        for item in value:
+            output.extend(_as_int_list(item))
+        return output
+    return [int(value)]
 
 class CausalInferenceArPipeline(FrameConcatCausalModel):
     def __init__(
@@ -74,6 +92,18 @@ class CausalInferenceArPipeline(FrameConcatCausalModel):
         shots_captions = batch['shots_captions']
         shot_flags_gt = torch.tensor([batch['shot_flag']]).to(torch.int32) 
         shot_flags_unique_gt = torch.unique(shot_flags_gt)
+        shot_frame_counts = _as_int_list(batch.get("shot_frame_counts"))
+        if not shot_frame_counts:
+            shot_frame_counts = [81] * len(shot_flags_unique_gt)
+        shot_frame_counts = [
+            nearest_4n_plus_1(frame_count)
+            for frame_count in shot_frame_counts
+        ]
+        if len(shot_frame_counts) != len(shot_flags_unique_gt):
+            raise ValueError(
+                "shot_frame_counts length must match shot count: "
+                f"{len(shot_frame_counts)} vs {len(shot_flags_unique_gt)}"
+            )
 
         # Save generated results
         output_images_list = []
@@ -171,15 +201,29 @@ class CausalInferenceArPipeline(FrameConcatCausalModel):
                 caption = global_captions[0][0] + shots_captions[0][latent_gen_iter][0][0]
 
             # noise = torch.randn_like(video_latents)  # [1, f, c, h, w]
-            noise = torch.randn([1, 21, condition_latents.shape[-3], condition_latents.shape[-2], condition_latents.shape[-1]]).to(device).to(dtype)  # [1, f, c, h, w]
+            target_video_frames = shot_frame_counts[latent_gen_iter]
+            target_latent_frames = latent_frames_for_video_frames(target_video_frames)
+            actual_video_frames = video_frames_for_latent_frames(target_latent_frames)
+            if actual_video_frames != target_video_frames:
+                print(
+                    "[inference] adjusted shot "
+                    f"{latent_gen_iter} frame count from {target_video_frames} "
+                    f"to {actual_video_frames}"
+                )
+            noise = torch.randn([
+                1,
+                target_latent_frames,
+                condition_latents.shape[-3],
+                condition_latents.shape[-2],
+                condition_latents.shape[-1],
+            ]).to(device).to(dtype)  # [1, f, c, h, w]
 
             shot_flags_for_rope += [shot_flags_for_rope[-1]+1] * noise.shape[1]
             shot_flags_for_rope = torch.tensor(shot_flags_for_rope).to(torch.int32).to(device)
 
             batch_size, num_output_frames, num_channels, height, width = noise.shape
             
-            assert num_output_frames % self.num_frame_per_block == 0
-            num_blocks = num_output_frames // self.num_frame_per_block
+            num_blocks, remainder_frames = divmod(num_output_frames, self.num_frame_per_block)
 
             with torch.no_grad():
                 prompts = caption_s if self.multi_caption else [caption]
@@ -256,6 +300,8 @@ class CausalInferenceArPipeline(FrameConcatCausalModel):
 
             # Step 2: Temporal denoising loop
             all_num_frames = [self.num_frame_per_block] * num_blocks
+            if remainder_frames:
+                all_num_frames.append(remainder_frames)
             for current_num_frames in all_num_frames:
 
                 noisy_input = noise[

@@ -1,4 +1,5 @@
 import argparse
+import ast
 import json
 import logging
 import os
@@ -18,6 +19,7 @@ from tqdm import tqdm
 from pipeline import CausalInferenceArPipeline
 from utils.dataset import MultiShots_FrameConcat_Dataset
 from utils.misc import set_seed
+from utils.shot_frames import frame_ranges_from_counts, nearest_4n_plus_1
 
 
 def str_to_bool(value):
@@ -41,21 +43,31 @@ def read_json_idx(json_path, fallback_idx):
     with open(json_path, "r", encoding="utf-8") as file:
         caption_data = json.load(file)
 
-    json_idx = caption_data.get("idx", caption_data.get("index"))
+    json_idx = caption_data.get("idx", caption_data.get("index", caption_data.get("sample_id")))
     if json_idx is None:
         match = re.search(r"\d+", os.path.basename(json_path))
         json_idx = match.group(0) if match else fallback_idx
     return json_idx
 
 
-def frame_ranges_from_count(total_frames, shot_count, frames_per_shot):
-    return [
-        [
-            shot_idx * frames_per_shot,
-            min((shot_idx + 1) * frames_per_shot, total_frames),
-        ]
-        for shot_idx in range(shot_count)
-    ]
+def as_int_list(value):
+    if value is None:
+        return []
+    if isinstance(value, torch.Tensor):
+        return [int(item) for item in value.detach().cpu().reshape(-1).tolist()]
+    if isinstance(value, (list, tuple)):
+        output = []
+        for item in value:
+            output.extend(as_int_list(item))
+        return output
+    return [int(value)]
+
+
+def clipped_frame_ranges(total_frames, frame_counts):
+    ranges = []
+    for start_frame, end_frame in frame_ranges_from_counts(frame_counts):
+        ranges.append([start_frame, min(end_frame, total_frames)])
+    return ranges
 
 
 def expected_video_files(video_dir, shot_count):
@@ -76,6 +88,35 @@ def replace_output_dir(tmp_video_dir, video_dir):
     if os.path.isdir(video_dir):
         shutil.rmtree(video_dir)
     os.replace(tmp_video_dir, video_dir)
+
+
+def shot_count_for_row(dataset, row_idx):
+    if dataset.frame_number is not None:
+        return len(ast.literal_eval(dataset.frame_number[row_idx]))
+
+    with open(dataset.caption_json_path[row_idx], "r", encoding="utf-8") as file:
+        caption_data = json.load(file)
+    return len([key for key in caption_data if re.fullmatch(r"shot\d+", key)])
+
+
+def summarize_outputs(dataset, output_folder):
+    complete = []
+    incomplete = []
+    missing = []
+
+    for row_idx, json_path in enumerate(dataset.caption_json_path):
+        json_idx = read_json_idx(json_path, row_idx)
+        shot_count = shot_count_for_row(dataset, row_idx)
+        video_dir = os.path.join(output_folder, f"video{json_idx}")
+
+        if not os.path.isdir(video_dir):
+            missing.append(json_idx)
+        elif output_complete(video_dir, shot_count):
+            complete.append(json_idx)
+        else:
+            incomplete.append(json_idx)
+
+    return complete, incomplete, missing
 
 
 def main():
@@ -197,7 +238,16 @@ def main():
 
         pipeline.vae.model.clear_cache()
 
-        frame_ranges = frame_ranges_from_count(video.shape[1], shot_count, args.frames_per_shot)
+        frame_counts = as_int_list(batch.get("shot_frame_counts"))
+        if not frame_counts:
+            frame_counts = [args.frames_per_shot] * shot_count
+        frame_counts = [nearest_4n_plus_1(frame_count) for frame_count in frame_counts]
+        if len(frame_counts) != shot_count:
+            raise ValueError(
+                "frames_per_shot length must match shot count for "
+                f"video{json_idx}: {len(frame_counts)} vs {shot_count}"
+            )
+        frame_ranges = clipped_frame_ranges(video.shape[1], frame_counts)
 
         tmp_video_dir = tempfile.mkdtemp(
             dir=args.output_folder,
@@ -232,6 +282,7 @@ def main():
                         "json_idx": json_idx,
                         "shot_count": shot_count,
                         "frames": int(video.shape[1]),
+                        "frames_per_shot": frame_counts,
                     },
                     done_file,
                     ensure_ascii=False,
@@ -248,6 +299,21 @@ def main():
 
     if dist.is_initialized():
         dist.barrier()
+
+    if rank == 0:
+        complete, incomplete, missing = summarize_outputs(dataset, args.output_folder)
+        logging.info(
+            "Output summary: %d/%d complete, %d incomplete, %d missing",
+            len(complete),
+            len(dataset),
+            len(incomplete),
+            len(missing),
+        )
+        if incomplete or missing:
+            raise RuntimeError(
+                "Generation incomplete. "
+                f"Incomplete videos: {incomplete}. Missing videos: {missing}."
+            )
 
 
 if __name__ == "__main__":

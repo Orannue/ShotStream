@@ -1,0 +1,28 @@
+{
+  "sample_id": "164",
+  "global_caption": "The video contains 11 shots. The overall color palette transitions uniformly from cool gray-blue to orange-red twilight. The first half uses natural mountain lighting, while the second half features seaside sunset backlighting and nighttime ambient light. The The emotional arc consistently revolves around two main tones: building tension and passionate release.",
+  "frames_per_shot": [
+    21,
+    21,
+    17,
+    25,
+    17,
+    21,
+    21,
+    25,
+    21,
+    29,
+    29
+  ],
+  "shot1": "Shot 1 fades in from black, wide overhead composition includes snowy mountain, winding coastal highway, and stopped equipment van in one depth plane. Foreground shows rough road shoulder and sparse grass and stones; midground shows van parked at curve; Cool natural lighting makes pixelated edges appear crisp. Band begins unloading cases and stands from van doors—actions still in preparation phase. Camera slowly pushes down and forward, drawing viewers into the tour journey.",
+  "shot2": "Shot 2 hard cut from previous shot, wide eye-level view shifts to forest clearing at mountain base. Tree trunks form vertical leading lines; drum kit centered; keyboard stand and speakers flanking sides. Shallow depth of field slightly blurs background mist. A young drummer crouches to secure hi-hat stand; another musician pulls cable toward generator. Low-saturation cold green forest light maintains consistent tone. English humming not yet fully engaged—only environment Camera pans across gear, ending on the moment of light drumhead vibration.",
+  "shot3": "Subject positioned on right third of frame; left side leaves space for forest air and wire direction. Background foliage blurred into blocky pixels. Soft natural side light outlines cheek and neck. Finger pressure and pick rebound clearly visible.",
+  "shot4": "Shot 4 continues hard cut into verse, medium eye-level shot frames all three members in forest. Drummer at back, keyboardist left, singer right. Foreground passes blurred branch for layering. Each drum hit during verse triggers minor internal camera stutter. Keyboardist sways side to side, drummer arms rise and fall, singer steps forward. Cool natural light with slight dappled sunlight. English verse continues steadily. Distorted guitar and keyboard harmony begin filling frequency range. Camera performs slight lateral follow move tracking singer's path, establishing full band performance relationship within single shot.",
+  "shot5": "Composition places shoe tip in foreground; background shows slightly blurred lower guitar body and hanging cable. Pixel art details highlight metallic edges and worn textures. At moment pedal is pressed, clear relay \"咔哒\" Strings vibrate at high frequency after pluck. Distortion tone suddenly becomes rougher. Camera performs extremely short push-in, directly converting auditory change into visual impact.",
+  "shot6": "Shot 6 uses action-matched hard cut, extreme wide low-angle shot captures band running out of forest onto coastal highway. Composition opens from dark forest exit to bright sea surface. Cables, instrument straps, and hair stream backward, indicating direction. Color shifts from cool green to gray-blue sea wind and warming horizon. Drums and fan roar jointly drive forward momentum. English Camera tracks sideways with slight forward shift, fully extending sense of characters charging into open space.",
+  "shot7": "Shot 7 connects via speed-matched hard cut, wide eye-level view shows trio rushing onto small cliffside stage. Stage made of simple wooden boards, speakers, and standing mic. Foreground shows wind-blown warning tape; background features steep drop to sea and extended horizon. Side-backlight before sunset enhances silhouettes. Band members quickly position: drummer sits, keyboardist turns to plug in, singer adjusts strap and stands at mic.",
+  "shot8": "Shot 8 hard cut on snare hit enters climax, medium-wide low-angle shot captures trio playing together with greater power. Sky occupies large background area for clean contrast. Drummer arms open wide for heavy hit; electric guitar strumming amplitude increases noticeably. Backlight creates glowing pixel outline on subjects and instruments.",
+  "shot9": "background sea reflection compressed into low-saturation flickering blocks. Wind lifts fabric and hair strands; Performance continues uninterrupted.",
+  "shot10": "Shot 10 brief fade-in/fade-out transition to more lyrical but intense segment, medium close-up eye-level slightly upward captures guitar solo under sunset backlight. Subject centered slightly left; right side opens to orange-red sea sky and speaker silhouette. Backlight dominates, leaving only golden pixel outline on face and instrument edges. Lead singer/guitarist rapidly slides, bends, and hooks strings; veins on back of hand and string vibrations clearly visible. Speaker fan roar brought to foreground; solo notes seem lifted by sea wind. Camera slowly pushes along neck direction with slight tilt, intensifying tonal ascent.",
+  "shot11": "Shot 11 hard cut on final solo note enters finale, extreme wide eye-level reveals full band under nightfall. Cliffside stage lit by simple cool-colored fill lights and equipment indicator lights. Foreground: waves crashing ashore; midground: trio completes final synchronized riff; background: sky deepens from dark blue to near-black. Color returns to mixed warm-cool but remains low-saturation unified closure. drummer delivers final strike; keyboardist holds final chord; Camera slowly pulls back, encompassing stage, sea, and night sky, concluding the entire tour journey from buildup to passionate climax."
+}

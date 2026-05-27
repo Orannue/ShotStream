@@ -1,0 +1,28 @@
+{
+  "sample_id": "106",
+  "global_caption": "The video contains 11 shots and is a realistic-style subway station first aid tutorial. It uses a neutral color palette and controlled, stable documentary-style camera movement, with overhead cool white lighting and soft fill as the primary lighting scheme. The entire video features Chinese",
+  "frames_per_shot": [
+    21,
+    17,
+    21,
+    21,
+    17,
+    21,
+    29,
+    21,
+    25,
+    25,
+    25
+  ],
+  "shot1": "Shot 1 opens with a direct cut, wide eye-level shot, using floor directional lines to guide the viewer’s gaze toward the right-side first aid training corner. Blurred passengers pass in the foreground while the background clearly shows the training mat, dummy, AED trainer, and signage. The environment is clean and bright, illuminated evenly by cool white lights. An elderly male stands at the center of the training area facing the camera, ready to demonstrate. The camera slowly pushes forward to establish the space.",
+  "shot2": "Shot 2 cuts hard from the previous shot, medium high-angle composition, focusing on the safe zone between the elderly male and the ground dummy. The foreground includes the edge of the training mat, and the background retains station signage. He first scans the surroundings, confirming no incoming trains or scattered obstacles, then signals that the area is safe before approaching the dummy. Lighting remains steady and natural. Chinese The camera performs a slight downward tilt to emphasize the sequence of inspection actions.",
+  "shot3": "Shot 3 connects via a match-on-action hard cut to the previous shot, close-up eye-level, framing focused on the dummy’s shoulder and the demonstrator’s upper body. Shallow depth of field slightly blurs the background concourse. He kneels on one knee, taps the shoulder, and leans forward to call out. His facial expression remains composed, hand movements clear and controlled. Cool white light creates soft contrast on his face and back of hands. Chinese The camera makes a very short push-in to highlight the key action.",
+  "shot4": "Shot 4 transitions with a slight dissolve into a medium-close high-angle shot. The demonstrator places one hand on the forehead and observes chest rise/fall, then lifts his head to call for help and signal retrieval of the AED trainer. Lighting remains even, with neutral visuals avoiding exaggeration.",
+  "shot5": "Shot 5 cuts hard from the previous shot, full shot eye-level, framing the entire training mat. The dummy is centered, and the elderly male adjusts its position on the left side of the frame. Using both hands, he controls the shoulders and torso to properly place the dummy in a supine position, moving steadily without dragging. The setting remains the same training corner, with consistent floor texture and equipment placement. The Chinese The camera performs a brief lateral follow move to ensure the repositioning process is fully visible.",
+  "shot6": "Shot 6 cuts via action match to a close-up high-angle shot, focusing on the dummy’s chest and the demonstrator’s overlapping hands. No distracting elements in the foreground; the background is compressed into softly blurred training mat texture. He quickly and accurately locates the compression point along the sternum, then firmly places the heel of his palm. Overhead cool white light sharply defines finger contours and chest movement. Chinese The camera remains nearly static, with only a subtle push-in to make hand positioning unmistakable.",
+  "shot7": "Faint station lighting in the background enhances realism. Slight fabric movement follows body motion, making arm exertion and recoil clearly visible. Lighting remains uniform and subdued. Chinese The camera uses micro-follow zooming to maintain force sense and teaching clarity.",
+  "shot8": "Shot 8 transitions with fade-in/fade-out to a medium-close side-high-angle shot, framing head, jaw, and chest in one frame. Focus lies on hand movement across forehead and chin. Lighting remains dominated by overhead concourse light, with soft facial shadows. Chinese The camera slides briefly along the head-shoulder axis to clarify action layers.",
+  "shot9": "Shot 9 cuts hard to an adjacent choking demonstration area on the concourse side, medium eye-level. Foreground features upright training mannequin and safety signage; background still shows subway concourse directional signs. Environment transition is logical and smooth. Overall neutral tone and lighting remain consistent. Piano Chinese The camera performs a small lateral shift to complete the area transition.",
+  "shot10": "Shot 10 cuts via action match from the previous shot, close-up rear eye-level, focusing on the demonstrator’s hands and the mannequin’s abdomen. Foreground shows his stable forearm; background softly blurred to station wall. He wraps arms around the mannequin from behind, precisely locates two fingers above the navel, clenches fist, inserts it, and demonstrates Heimlich maneuver inward and upward. Body force path is clear, motion fluid but not exaggerated. Overhead light creates distinct layers on hands and clothing folds. Chinese The camera slightly pushes in to emphasize hand placement and direction of force.",
+  "shot11": "Shot 11 fades in from the previous shot, medium-wide eye-level, returning to the full training area. Foreground shows neatly stored AED trainer and training mat. Focus rests on the elderly male facing the camera in summary pose. Background concourse remains stably operational, lighting unchanged. Chinese The camera slowly pulls back, ending the entire process with a calm, clear instructional finish."
+}
